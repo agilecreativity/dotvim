@@ -3,16 +3,12 @@
 ## Installation
 
 ```
-git clone https://github.com/agilecreativity/dotvim.git ~/vim
-cd ~/vim
+git clone https://github.com/agilecreativity/dotvim.git ~/dotvim
+cd ~/dotvim
 git submodule init
 git submodule update
 make install
 ```
-
-Note: the directory is clone to `~/vim` not `~/dotvim` as the script use this
-name by convention. (see: `Makefile` for detail)
-
 ## Post-installation procedure
 
 ### Link to the private aliases
