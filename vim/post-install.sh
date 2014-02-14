@@ -9,3 +9,11 @@ echo "Post installation for UltiSnips"
 rm -rf ~/.vim/ftdetect
 mkdir -p ~/.vim/ftdetect/
 ln -fs ~/.vim/bundle/ultisnips/ftdetect/* ~/.vim/ftdetect/
+
+# Build `CommandT`
+# Note: for this to work vim must be built with +ruby support
+cd ~/.vim/bundle/Command-T/ruby/command-t
+rbenv local system
+rbenv rehash
+ruby extconf.rb
+make

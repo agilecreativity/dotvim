@@ -56,15 +56,13 @@ release data : 2013-06-27
 Now you can build the CommandT as follow
 
 ``` shell
-cd ~/vim/bundle/Command-T/ruby/command-t
-```
-
-``` shell
+cd ~/.vim/bundle/Command-T/ruby/command-t
 rbenv local system
 rbenv rehash
 ruby extconf.rb
 make
 ```
+
 Now your CommandT should be ready to use.
 
 ### Notes
