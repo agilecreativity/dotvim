@@ -34,5 +34,4 @@ if v:version > 703 || v:version == 703 && has("patch541")
   " delete comment char when joining commented lines
   set formatoptions+=j
 endif
-
 " }}}
