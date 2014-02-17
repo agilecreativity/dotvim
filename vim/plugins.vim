@@ -73,6 +73,8 @@ NeoBundle 'noprompt/vim-yardoc'
 NeoBundle 'xolox/vim-notes'
 NeoBundle 'xolox/vim-misc'
 NeoBundle 'SirVer/ultisnips'
+NeoBundle 'airblade/vim-gitgutter'
+NeoBundle 'ntpeters/vim-better-whitespace'
 " }}}
 
 " List of plugins that I have used or like to try {{{

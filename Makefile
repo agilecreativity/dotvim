@@ -10,7 +10,7 @@ $(HOME)/.%: %
 
 install: $(TARGETS)
 	git submodule update --init --recursive
-	echo "Y" | vim +NeoBundleInstall +qall
+	vim +NeoBundleInstall +qall
 
 uninstall:
 	rm -f $(TARGETS)
