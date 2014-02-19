@@ -15,24 +15,27 @@ elseif $TERM =~ '^xterm$'
   set t_Co=256
 endif
 
-if has('gui_running')
-  set lines=80
-  set columns=120
-  set background=light
-else
-  set background=dark
-endif
+set background=dark
+set lines=80
+set columns=120
+colorscheme seoul256
 
-if has("gui_macvim")
-  set autowriteall
-  set tabpagemax=100
-  set guifont=Menlo\ Regular:h13
+if has('gui_running')
+  if has("gui_gtk2")
+    set guifont=Inconsolata\ Bold\ 12
+    " remove bottom, left, right scrollbar from Gvim
+    set guioptions-=l
+    set guioptions-=L
+    set guioptions-=r
+    set guioptions-=b
+  elseif has("gui_macvim")
+    set autowriteall
+    set tabpagemax=20
+    set guifont=Menlo\ Regular:h13
+  endif
 endif
 
 syntax enable
-
-set background=dark
-colorscheme seoul256
 
 " Use visualbell instead
 set noerrorbells
