@@ -23,6 +23,10 @@ colorscheme seoul256
 if has('gui_running')
   if has("gui_gtk2")
     set guifont=Inconsolata\ Bold\ 12
+    set guioptions-=T
+    set guioptions-=t
+    set guioptions-=g
+    set guioptions-=m
     " remove bottom, left, right scrollbar from Gvim
     set guioptions-=l
     set guioptions-=L

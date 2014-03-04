@@ -48,7 +48,7 @@ set timeout timeoutlen=1000 ttimeoutlen=100
 set title
 set t_ti= t_te=                " prevent Vim from clobbering the scrollback buffer
 set winwidth=79
-set nowrap
+set wrap
 set complete=.,w,b,u,t
 set completeopt=longest,menuone,preview
 setlocal numberwidth=3

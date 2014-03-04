@@ -75,9 +75,13 @@ NeoBundle 'xolox/vim-misc'
 NeoBundle 'SirVer/ultisnips'
 NeoBundle 'airblade/vim-gitgutter'
 NeoBundle 'ntpeters/vim-better-whitespace'
+NeoBundle 'gregsexton/gitv'
 " }}}
 
 " List of plugins that I have used or like to try {{{
+"NeoBundle 'daylerees/colour-schemes', { 'rtp': '~/.vim/bundle/colour-schemes/vim/' }
+"NeoBundle 'jaxbot/github-issues.vim'
+"NeoBundle 'gregsexton/gitv'
 "NeoBundle 'maciakl/vim-neatstatus'
 "NeoBundle 'Valloric/YouCompleteMe'
 "NeoBundle 'suan/vim-instant-markdown'
