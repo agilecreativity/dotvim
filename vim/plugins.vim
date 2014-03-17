@@ -77,6 +77,7 @@ NeoBundle 'airblade/vim-gitgutter'
 NeoBundle 'ntpeters/vim-better-whitespace'
 NeoBundle 'gregsexton/gitv'
 NeoBundle 'leafo/moonscript-vim'
+NeoBundle 'fsouza/go.vim'
 " }}}
 
 " List of plugins that I have used or like to try {{{

@@ -1,5 +1,10 @@
 if has("autocmd")
 
+  " Go file {{{
+    au!
+    au BufRead,BufNewFile *.go set filetype=go
+  " }}}
+
   " vimscript file {{{
   aug filetype_vim
     au!
