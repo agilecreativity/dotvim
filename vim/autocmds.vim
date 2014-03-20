@@ -27,8 +27,8 @@ if has("autocmd")
   aug filetype_markdown
     au!
     au BufRead,BufNewFile *.md,*.mkd,*.markdown set filetype=markdown
-    au Bufread,BufNewFile *.md,*.mkd,*.markdown set textwidth=79
-    " TODO: see :h formatoptions, :h comments
+    " No wrap when I insert long [link](http://some-long-link-url/.../)
+    au Bufread,BufNewFile *.md,*.mkd,*.markdown set nowrap
     au BufRead,BufNewFile *.md,*.mkd,*.markdown set ai formatoptions=tcroqn2 comments=n:>
   aug END
   " }}}
