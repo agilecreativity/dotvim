@@ -51,6 +51,14 @@ if has("autocmd")
   aug END
   " }}}
 
+  " Lua related file {{{
+  aug filetype_lua
+    au!
+    au BufRead,BufNewFile *.moon set filetype=moon
+    au FileType moon setl sw=2 sts=2 et iskeyword+=!,?
+  aug END
+
+  " }}}
   " shared settings {{{
   aug shared_settings
     au!
