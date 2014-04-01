@@ -3,7 +3,13 @@ map <leader>gac :Gcommit -a -m ""<left>
 map <leader>gb  :Gblame<cr>
 map <leader>gc  :Gcommit -m "wip: "<left>
 map <leader>gs  :Gstatus<cr>
-map <leader>gw  :!git add . && git commit -m 'WIP' && git push<cr>
+
+" Note: always push
+"map <leader>gw  :!git add . && git commit -m 'WIP' && git push<cr>
+
+" Note: only commit but don't push to remote branch
+" don't push the code until we have squash it properly!
+map <leader>gw  :!git add . && git commit -m 'WIP'<cr>
 " }}}
 
 " CommandT related settings {{{
