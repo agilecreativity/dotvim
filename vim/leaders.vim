@@ -16,7 +16,7 @@ map <leader>gw  :!git add . && git commit -m 'WIP'<cr>
 map <leader>f  :CommandTFlush<cr>\|:CommandT<cr>
 map <leader>F  :CommandTFlush<cr>\|:CommandT %%<cr>
 map <leader>gf :CommandTFlush<cr>\|:CommandT features<cr>
-map <leader>gg :topleft 100 :split Gemfile<cr>
+map <leader>aa :topleft 100 :split Gemfile<cr>
 map <leader>gh :CommandTFlush<cr>\|:CommandT app/helpers<cr>
 map <leader>gl :CommandTFlush<cr>\|:CommandT lib<cr>
 map <leader>gm :CommandTFlush<cr>\|:CommandT app/models<cr>

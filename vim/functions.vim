@@ -73,10 +73,12 @@ function! DeleteComments()
   "" raplace multiple blank lines with one
   "silent! exec 'g/^$/,/./-j'
 endfunction
+" }}}
 
 " Note: to delete all trailing whitespace for each file in repo (VERY DESTRUCTIVE!)
 " map <leader>W :args `git grep -lI .` \| argdo %s/\s\+$//gce \| w<cr>
 
+" Print the information about the ruby version built with vim {{{
 " Example from 'Scriping Vim with Ruby' by Matt Margolis (Madison Ruby 2011)
 " Tips: for real world example see 'github.com/sjbach/lusty'
 " see: :h ruby
@@ -89,3 +91,32 @@ function! RubyInfo()
 EOF
 endfunction
 " }}}
+
+" Wrapper function to `git grep` command {{{
+" Thanks to [Aaron Patterson's dotfile](https://github.com/tenderlove/dot_vim/blob/master/vimrc)
+"
+function GitGrep(...)
+  let save = &grepprg
+  set grepprg=git\ grep\ -n\ $*
+  let s = 'grep'
+  for i in a:000
+          let s = s . ' ' . i
+  endfor
+  exe s
+  let &grepprg = save
+endfun
+
+command -nargs=? G call GitGrep(<f-args>)
+" }}}
+
+" Wrapper function go `git grep` for word boundary {{{
+func GitGrepWord()
+  normal! "zyiw
+  call GitGrep('-w -e ', getreg('z'))
+endf
+
+nmap <C-x>G :call GitGrepWord()<CR>
+" }}}
+
+" TODO: Please remap this key to something else.
+"map <leader>gg :Ggrep -e '<C-R>=expand("<cword>")<Enter>'<Enter>
