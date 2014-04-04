@@ -66,6 +66,11 @@ nnoremap <leader>l  :ls<cr>:b
 nnoremap <leader>nr :setlocal number!<cr>
 nnoremap <leader>nn :split note:todo<cr>
 
+" borrow from Gary Beernhard's dotfile
+command! GdiffInTab tabedit %|vsplit|Gdiff
+nnoremap <leader>d :GdiffInTab<cr>
+nnoremap <leader>D :tabclose<cr>
+
 map <leader>co ggVG"*y
 map <leader>ct :!ctags -R .<cr>
 
