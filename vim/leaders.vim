@@ -68,7 +68,9 @@ nnoremap <leader>nn :split note:todo<cr>
 
 map <leader>co ggVG"*y
 map <leader>ct :!ctags -R .<cr>
-map <leader>e  :e <C-R>=expand("%:p:h") . '/'<cr>
+
+"map <leader>e :e <C-R>=expand("%:p:h") . '/'<cr>
+map <leader>e :CommandT <C-R>=expand("%:p:h") . '/'<cr>
 
 nnoremap <leader>xc :call DeleteComments()<cr>
 vnoremap <leader>h  :s/:\(\w*\) *=>/\1:/g<cr>
