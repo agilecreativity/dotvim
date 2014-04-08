@@ -36,7 +36,7 @@ if has("autocmd")
   " ruby file {{{
   aug filetype_ruby
     au!
-    au BufRead,BufNewFile *.ru           set filetype=ruby
+    au BufRead,BufNewFile *.ru,*.thor    set filetype=ruby
     au BufRead,BufNewFile [vV]agrantfile set filetype=ruby
     au BufRead,BufNewFile Gemfile        set filetype=ruby
     au BufRead,BufNewFile Guardfile      set filetype=ruby
