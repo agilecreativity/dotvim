@@ -35,3 +35,7 @@ if v:version > 703 || v:version == 703 && has("patch541")
   set formatoptions+=j
 endif
 " }}}
+
+" Quick Spike [remove when done]
+nnoremap ,, :!ruby %<CR>
+nnoremap ;; :!rubocop %<CR>

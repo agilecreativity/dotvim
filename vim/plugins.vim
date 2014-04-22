@@ -78,6 +78,7 @@ NeoBundle 'ntpeters/vim-better-whitespace'
 NeoBundle 'gregsexton/gitv'
 NeoBundle 'leafo/moonscript-vim'
 NeoBundle 'fsouza/go.vim'
+NeoBundle 'ngmy/vim-rubocop'
 " }}}
 
 " List of plugins that I have used or like to try {{{
@@ -91,6 +92,7 @@ NeoBundle 'fsouza/go.vim'
 "NeoBundle 'einars/js-beautify'
 "NeoBundle 'rstacruz/sparkup', {'rtp': 'vim/'}
 "NeoBundle 'Shougo/unite.vim'
+"NeoBundle 'lukaszkorecki/vim-GitHubDashBoard'
 " }}}
 
 NeoBundleCheck

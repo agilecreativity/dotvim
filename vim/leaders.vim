@@ -27,7 +27,6 @@ nnoremap <silent> <leader>b :CommandTBuffer<cr>
 nnoremap <silent> <leader>t :CommandT<cr>
 " }}}
 
-
 " Tmux related settings {{{
 "command! -nargs=? -complete=shellcmd W  :w! | :call ScreenShellSend("load '".@%."';")
 map <leader>rc :ScreenShellVertical bundle exec rails c test<cr>
