@@ -94,6 +94,7 @@ NeoBundle 'ngmy/vim-rubocop'
 "NeoBundle 'rstacruz/sparkup', {'rtp': 'vim/'}
 "NeoBundle 'Shougo/unite.vim'
 "NeoBundle 'lukaszkorecki/vim-GitHubDashBoard'
+"NeoBundle 'vim-scripts/visualrepeat'
 " }}}
 
 NeoBundleCheck

@@ -78,4 +78,10 @@ map <leader>e :CommandT <C-R>=expand("%:p:h") . '/'<cr><cr>
 
 nnoremap <leader>xc :call DeleteComments()<cr>
 vnoremap <leader>h  :s/:\(\w*\) *=>/\1:/g<cr>
+
+" Start interactive EasyAlign in visual mode
+vmap <Enter> <Plug>(EasyAlign)
+
+" Start interactive EasyAlign with a vim movement
+" nmap <leader>a <Plug>(EasyAlign)
 " }}}
