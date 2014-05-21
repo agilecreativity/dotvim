@@ -39,3 +39,4 @@ endif
 " Quick Spike [remove when done]
 nnoremap ,, :!ruby %<CR>
 nnoremap ;; :!rubocop %<CR>
+colorscheme Tomorrow-Night
