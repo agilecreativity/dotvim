@@ -1,8 +1,17 @@
 if has("autocmd")
 
+  " Apple's Swift file {{{
+  aug filetype_swift
+    au!
+    au BufRead,BufNewFile *.swift set filetype=swift
+  aug END
+  " }}}
+
   " Go file {{{
+  aug filetype_go
     au!
     au BufRead,BufNewFile *.go set filetype=go
+  aug END
   " }}}
 
   " vimscript file {{{
