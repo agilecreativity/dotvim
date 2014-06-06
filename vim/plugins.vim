@@ -11,7 +11,6 @@ NeoBundle 'groenewege/vim-less'
 NeoBundle 'honza/vim-snippets'
 NeoBundle 'junegunn/seoul256.vim'
 NeoBundle 'junegunn/vim-easy-align'
-NeoBundle 'kana/vim-fakeclip'
 NeoBundle 'kana/vim-textobj-lastpat'
 NeoBundle 'kana/vim-textobj-user'
 NeoBundle 'kchmck/vim-coffee-script'
@@ -81,6 +80,10 @@ NeoBundle 'gregsexton/gitv'
 NeoBundle 'leafo/moonscript-vim'
 NeoBundle 'fsouza/go.vim'
 NeoBundle 'ngmy/vim-rubocop'
+
+" Note: This plugin require 'nodejs' or 'v8' javascript engine to be installed!
+NeoBundle 'maksimr/vim-jsbeautify'
+NeoBundle 'toyamarinyon/vim-swift'
 " }}}
 
 " List of plugins that I have used or like to try {{{
@@ -90,6 +93,7 @@ NeoBundle 'ngmy/vim-rubocop'
 "NeoBundle 'maciakl/vim-neatstatus'
 "NeoBundle 'Valloric/YouCompleteMe'
 "NeoBundle 'suan/vim-instant-markdown'
+"NeoBundle 'kana/vim-fakeclip'
 "NeoBundle 'maksimr/vim-jsbeautify'
 "NeoBundle 'einars/js-beautify'
 "NeoBundle 'rstacruz/sparkup', {'rtp': 'vim/'}
