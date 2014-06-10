@@ -2,14 +2,21 @@
 " file: ~/.vim/autocmds.vim :beg"
 "-------------------------------"
 if has("autocmd")
-
-  " Haskel file {{{
+  " Haskell file {{{
   aug filetype_swift
     au!
     au BufRead,BufNewFile *.hs set filetype=haskell
   aug END
 
   " }}}
+
+  " CoffeeScript file {{{
+  aug filetype_swift
+    au!
+    au BufRead,BufNewFile *.coffee set filetype=coffee
+  aug END
+  " }}}
+
   " Apple's Swift file {{{
   aug filetype_swift
     au!

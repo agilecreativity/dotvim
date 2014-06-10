@@ -39,16 +39,13 @@ endif
 " }}}
 
 " Quick Spike {{{
-nnoremap ,, :!ruby %<CR>
-" colorscheme Tomorrow-Night
-
 " Note: this will make tmux work with system clipboard!!
 " and will work correctly with Thoughtbot's article!
-"set clipboard=unnamed
+"
+" set clipboard=unnamed
 " nnoremap ;; :!bundle exec rspec %<CR>
 " nnoremap ;; :!rubocop %<CR>
 nnoremap ;; :!ruby %<CR>
-colorscheme seoul256
 
 " Quick spike:
 " see: http://usevim.com/2013/01/04/vim101-jumping/
@@ -60,7 +57,6 @@ set suffixesadd+=.js
 " Load custom configuration for a project
 function! AddCustomLoadPath()
   if !empty(s:vim_home.'/custom_load_path.vim')
-    " let s:vim_home = '~/.vim/'
     exec 'source '. s:vim_home . '/custom_load_path.vim'
   endif
 endfunction
