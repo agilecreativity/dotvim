@@ -39,4 +39,8 @@ endif
 " Quick Spike [remove when done]
 nnoremap ,, :!ruby %<CR>
 nnoremap ;; :!rubocop %<CR>
-colorscheme Tomorrow-Night
+" colorscheme Tomorrow-Night
+
+" Note: this will make tmux work with system clipboard!!
+" and will work correctly with Thoughtbot's article!
+"set clipboard=unnamed

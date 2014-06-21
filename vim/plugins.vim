@@ -84,6 +84,7 @@ NeoBundle 'ngmy/vim-rubocop'
 " Note: This plugin require 'nodejs' or 'v8' javascript engine to be installed!
 NeoBundle 'maksimr/vim-jsbeautify'
 NeoBundle 'toyamarinyon/vim-swift'
+NeoBundle 'lukerandall/haskellmode-vim'
 " }}}
 
 " List of plugins that I have used or like to try {{{

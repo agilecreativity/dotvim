@@ -1,5 +1,12 @@
 if has("autocmd")
 
+  " Haskel file {{{
+  aug filetype_swift
+    au!
+    au BufRead,BufNewFile *.hs set filetype=haskell
+  aug END
+
+  " }}}
   " Apple's Swift file {{{
   aug filetype_swift
     au!
