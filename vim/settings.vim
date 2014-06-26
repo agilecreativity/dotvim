@@ -32,6 +32,7 @@ set nofoldenable
 set nojoinspaces               " use only 1 space when joining the lines, not 2
 set noswapfile
 set number                     " show number
+set relativenumber             " show relative number as well
 set ruler
 set scrolloff=3                " have some context around the current line
 set shiftround                 " round indent to the multiple of shiftwidth
