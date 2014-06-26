@@ -36,11 +36,26 @@ if v:version > 703 || v:version == 703 && has("patch541")
 endif
 " }}}
 
-" Quick Spike [remove when done]
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" Quick Spike {{{
 nnoremap ,, :!ruby %<CR>
-nnoremap ;; :!rubocop %<CR>
 " colorscheme Tomorrow-Night
 
 " Note: this will make tmux work with system clipboard!!
 " and will work correctly with Thoughtbot's article!
 "set clipboard=unnamed
+" nnoremap ;; :!bundle exec rspec %<CR>
+nnoremap ;; :!rubocop %<CR>
+colorscheme seoul256
+
+" Quick spike:
+" see: http://usevim.com/2013/01/04/vim101-jumping/
+" This will make require './some_file' expands to './some_file.rb'
+set suffixesadd+=.rb
+set path+=tools/
+set path+=app/jobs/
+set path+=app/jobs/helpers/
+set path+=app/controllers/
+set path+=app/models
+" }}}
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""

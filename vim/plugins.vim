@@ -85,6 +85,8 @@ NeoBundle 'ngmy/vim-rubocop'
 NeoBundle 'maksimr/vim-jsbeautify'
 NeoBundle 'toyamarinyon/vim-swift'
 NeoBundle 'lukerandall/haskellmode-vim'
+" Note: See the different color scheme with :SCROLL + arrow to pick one
+NeoBundle 'vim-scripts/ScrollColors'
 " }}}
 
 " List of plugins that I have used or like to try {{{
