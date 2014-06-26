@@ -87,6 +87,11 @@ NeoBundle 'toyamarinyon/vim-swift'
 NeoBundle 'lukerandall/haskellmode-vim'
 " Note: See the different color scheme with :SCROLL + arrow to pick one
 NeoBundle 'vim-scripts/ScrollColors'
+" Transform markup language of choice to HTML. :help :HAMMER
+" Need:
+" $rbenv shell system
+" $sudo gem install github-markup tilt redcarpet
+NeoBundle 'matthias-guenther/hammer.vim'
 " }}}
 
 " List of plugins that I have used or like to try {{{
