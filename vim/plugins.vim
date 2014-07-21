@@ -1,4 +1,6 @@
-" list of bundle managed by NeoBundle {{{
+"------------------------------"
+" file: ~/.vim/plugins.vim :beg"
+"------------------------------"
 NeoBundle 'MarcWeber/vim-addon-mw-utils'
 NeoBundle 'christoomey/vim-tmux-navigator'
 NeoBundle 'carlosgaldino/elixir-snippets'
@@ -72,8 +74,6 @@ NeoBundle 'wincent/Command-T'
 NeoBundle 'noprompt/vim-yardoc'
 NeoBundle 'xolox/vim-notes'
 NeoBundle 'xolox/vim-misc'
-" Note: interfere with vimrunner, so turn off for now
-"NeoBundle 'SirVer/ultisnips'
 NeoBundle 'airblade/vim-gitgutter'
 NeoBundle 'ntpeters/vim-better-whitespace'
 NeoBundle 'gregsexton/gitv'
@@ -81,33 +81,27 @@ NeoBundle 'leafo/moonscript-vim'
 NeoBundle 'fsouza/go.vim'
 NeoBundle 'ngmy/vim-rubocop'
 
-" Note: This plugin require 'nodejs' or 'v8' javascript engine to be installed!
+" ----------------------------------------------------------- "
+" Require 'nodejs' or 'v8' javascript engine to be installed!
 NeoBundle 'maksimr/vim-jsbeautify'
+" ----------------------------------------------------------- "
+
 NeoBundle 'toyamarinyon/vim-swift'
 NeoBundle 'lukerandall/haskellmode-vim'
-" Note: See the different color scheme with :SCROLL + arrow to pick one
+
+" ----------------------------------------------------------- "
+" See the different color scheme with :SCROLL + arrow to pick one
 NeoBundle 'vim-scripts/ScrollColors'
+" ----------------------------------------------------------- "
+
+" ----------------------------------------------------------- "
 " Transform markup language of choice to HTML. :help :HAMMER
-" Need:
 " $rbenv shell system
 " $sudo gem install github-markup tilt redcarpet
 NeoBundle 'matthias-guenther/hammer.vim'
-" }}}
-
-" List of plugins that I have used or like to try {{{
-"NeoBundle 'daylerees/colour-schemes', { 'rtp': '~/.vim/bundle/colour-schemes/vim/' }
-"NeoBundle 'jaxbot/github-issues.vim'
-"NeoBundle 'gregsexton/gitv'
-"NeoBundle 'maciakl/vim-neatstatus'
-"NeoBundle 'Valloric/YouCompleteMe'
-"NeoBundle 'suan/vim-instant-markdown'
-"NeoBundle 'kana/vim-fakeclip'
-"NeoBundle 'maksimr/vim-jsbeautify'
-"NeoBundle 'einars/js-beautify'
-"NeoBundle 'rstacruz/sparkup', {'rtp': 'vim/'}
-"NeoBundle 'Shougo/unite.vim'
-"NeoBundle 'lukaszkorecki/vim-GitHubDashBoard'
-"NeoBundle 'vim-scripts/visualrepeat'
-" }}}
+" ----------------------------------------------------------- "
 
 NeoBundleCheck
+"------------------------------"
+" file: ~/.vim/plugins.vim :end"
+"------------------------------"

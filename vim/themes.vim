@@ -1,3 +1,7 @@
+"------------------------------"
+" file: ~/.vim/themmes.vim :beg"
+"------------------------------"
+
 set laststatus=2
 set statusline=
 set statusline+=%f\                    " file name
@@ -50,3 +54,7 @@ set t_vb="."
 if exists('+colorcolumn')
   set colorcolumn=80
 endif
+
+"------------------------------"
+" file: ~/.vim/themmes.vim :end"
+"------------------------------"

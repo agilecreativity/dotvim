@@ -1,3 +1,6 @@
+"-------------------------------"
+" file: ~/.vim/autocmds.vim :beg"
+"-------------------------------"
 if has("autocmd")
 
   " Haskel file {{{
@@ -133,7 +136,7 @@ if has("autocmd")
   aug close_nerdtree
     au!
     au WinEnter * call s:CloseLastNerdTree()
-    " Close all open buffers on entering a window if the only {{{
+    " Close all open buffers on entering a window if the only
     " buffer that's left is the NERDTree buffer
     function! s:CloseLastNerdTree()
       if exists("t:NERDTreeBufName")
@@ -146,5 +149,7 @@ if has("autocmd")
     endfunction
   aug END
   " }}}
-
 endif
+"-------------------------------"
+" file: ~/.vim/autocmds.vim :end"
+"-------------------------------"

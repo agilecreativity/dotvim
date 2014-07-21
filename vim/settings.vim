@@ -1,8 +1,12 @@
+"------------------------------"
+" file: ~/.vim/setting.vim :beg"
+"------------------------------"
+
 syntax on
 let mapleader=","
 let localmapleader="\\"
 
-"set clipboard=unnamed         " use the system clipboard
+"set clipboard=unnamed
 "inoremap <esc> <nop>
 
 " Note: work best with NERDTree when we rename/move/delete file
@@ -72,7 +76,16 @@ set wildignore+=*/assets/images/*
 set wildignore+=*/assets/documents/*
 set wildignore+=*/assets/images/*
 set wildignore+=tags,.tags
+" }}}
 set foldmethod=manual
 
 call MapCR()
 let g:rails_menu = 2
+
+" Useful abbreviation for some common mistake {{{
+ab q1  q!
+" }}}
+
+"------------------------------"
+" file: ~/.vim/setting.vim :end"
+"------------------------------"

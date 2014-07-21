@@ -1,3 +1,6 @@
+"-------------------------------"
+" file: ~/.vim/mappings.vim :beg"
+"-------------------------------"
 cmap w!! w !sudo tee % >/dev/null
 cnoremap %s/ %s/\v
 command!  OpenChangedFiles :call OpenChangedFiles()
@@ -31,7 +34,6 @@ nnoremap <silent> <F7>  :set paste!<cr>
 nnoremap <silent> <F8>  :TagbarToggle<cr>
 nnoremap J mzJ`z  " keep the cursor in place while joining line
 
-"nnoremap K :q<cr> " kill window
 nnoremap N  Nzz
 nnoremap Vaa ggVG " select entire buffer
 nnoremap gj j
@@ -55,3 +57,6 @@ vnoremap <silent> il :<c-u>norm!^vg_<cr>
 vnoremap > >gv
 
 xmap s <Plug>VSurround
+"-------------------------------"
+" file: ~/.vim/mappings.vim :end"
+"-------------------------------"

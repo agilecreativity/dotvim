@@ -1,3 +1,7 @@
+"--------------------------------"
+" file: ~/.vim/functions.vim :beg"
+"--------------------------------"
+
 " Rename current file {{{
 function! RenameFile()
   let old_name = expand('%')
@@ -95,7 +99,7 @@ endfunction
 " Wrapper function to `git grep` command {{{
 " Thanks to [Aaron Patterson's dotfile](https://github.com/tenderlove/dot_vim/blob/master/vimrc)
 "
-function GitGrep(...)
+function! GitGrep(...)
   let save = &grepprg
   set grepprg=git\ grep\ -n\ $*
   let s = 'grep'
@@ -104,19 +108,23 @@ function GitGrep(...)
   endfor
   exe s
   let &grepprg = save
-endfun
+endfunction
 
 command -nargs=? G call GitGrep(<f-args>)
 " }}}
 
 " Wrapper function go `git grep` for word boundary {{{
-func GitGrepWord()
+function! GitGrepWord()
   normal! "zyiw
   call GitGrep('-w -e ', getreg('z'))
-endf
+endfunction
 
 nmap <C-x>G :call GitGrepWord()<CR>
 " }}}
 
 " TODO: Please remap this key to something else.
 "map <leader>gg :Ggrep -e '<C-R>=expand("<cword>")<Enter>'<Enter>
+
+"--------------------------------"
+" file: ~/.vim/functions.vim :end"
+"--------------------------------"

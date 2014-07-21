@@ -7,9 +7,9 @@ elseif os == "Linux"
   let g:gist_clip_command = '/usr/bin/xclip -selection clipboard'
 endif
 
-" Note: $git config --global github.user agilecreativity
+"$git config --global github.user agilecreativity
 if os == "Darwin" || os == "Linux"
-  let g:github_token = system('cat ~/Dropbox/config/github_token.txt')
+  let g:github_token = system('cat ~/codes/bitbucket/private-dotfiles/github/github_token.txt')
 endif
 
 let g:gist_detect_filetype = 0

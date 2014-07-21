@@ -1,3 +1,6 @@
+"------------------------------"
+" file: ~/.vim/leaders.vim :beg"
+"------------------------------"
 " Git related settings {{{
 map <leader>gac :Gcommit -a -m ""<left>
 map <leader>gb  :Gblame<cr>
@@ -58,6 +61,15 @@ map <leader>sp :split <C-R>=expand("%:p:h") . '/'<cr>
 map <leader>vp :vnew  <C-R>=expand("%:p:h") . '/'<cr>
 map <leader>y "*y
 
+map <leader>cn :sp  ~/Dropbox/notes/coding_notes.md.txt<cr>
+map <leader>pn :sp  ~/Dropbox/notes/project_notes.md.txt<cr>
+map <leader>pt :sp  ~/Dropbox/notes/todo_notes.md.txt<cr>
+map <leader>pv :sp  ~/Dropbox/notes/vim_notes.md.txt<cr>
+map <leader>ez :sp  ~/Dropbox/dotfiles/zsh/zshrc<cr>
+
+map <leader>sv :so  ~/.vimrc<cr>
+map <leader>vv :sp  ~/dotvim/vimrc<cr>
+
 nnoremap <leader>(  :tabprev<cr>
 nnoremap <leader>)  :tabnext<cr>
 nnoremap <leader>a  :Ag<space>
@@ -85,3 +97,6 @@ vmap <Enter> <Plug>(EasyAlign)
 " Start interactive EasyAlign with a vim movement
 " nmap <leader>a <Plug>(EasyAlign)
 " }}}
+"------------------------------"
+" file: ~/.vim/leaders.vim :end"
+"------------------------------"
