@@ -45,8 +45,9 @@ nnoremap ,, :!ruby %<CR>
 " Note: this will make tmux work with system clipboard!!
 " and will work correctly with Thoughtbot's article!
 "set clipboard=unnamed
-nnoremap ;; :!bundle exec rspec %<CR>
+" nnoremap ;; :!bundle exec rspec %<CR>
 " nnoremap ;; :!rubocop %<CR>
+nnoremap ;; :!ruby %<CR>
 colorscheme seoul256
 
 " Quick spike:
@@ -67,6 +68,10 @@ endfunction
 " }}}
 
 set nowrap
+
+" Spikes - adding test for 'Mercurial' support in Vim
+let g:lawrencium_debug = 1
+let g:lawrencium_hg_executable = '/usr/local/bin/hg'
 "--------------------"
 " file: ~/.vimrc :end"
 "--------------------"

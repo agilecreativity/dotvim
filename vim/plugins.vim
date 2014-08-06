@@ -80,6 +80,7 @@ NeoBundle 'gregsexton/gitv'
 NeoBundle 'leafo/moonscript-vim'
 NeoBundle 'fsouza/go.vim'
 NeoBundle 'ngmy/vim-rubocop'
+NeoBundle 'ludovicchabant/vim-lawrencium'
 
 " ----------------------------------------------------------- "
 " Require 'nodejs' or 'v8' javascript engine to be installed!
