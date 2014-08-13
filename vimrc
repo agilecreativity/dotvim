@@ -71,3 +71,14 @@ let g:lawrencium_hg_executable = '/usr/local/bin/hg'
 "--------------------"
 " file: ~/.vimrc :end"
 "--------------------"
+
+" If you don't want any backup at all {{{
+" set nobackup
+" set nowritebackup
+" set noswapfile
+" }}}
+
+" Set the backup directory just in case {{{
+set backupdir=~/.tmp
+" }}}
+
