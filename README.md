@@ -1,5 +1,4 @@
 ## Vim Configuration (dotvim)
-
 ## Installation
 
 ```

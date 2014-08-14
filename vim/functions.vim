@@ -1,7 +1,6 @@
 "--------------------------------"
 " file: ~/.vim/functions.vim :beg"
 "--------------------------------"
-
 " Rename current file {{{
 function! RenameFile()
   let old_name = expand('%')
@@ -124,7 +123,6 @@ nmap <C-x>G :call GitGrepWord()<CR>
 
 " TODO: Please remap this key to something else.
 "map <leader>gg :Ggrep -e '<C-R>=expand("<cword>")<Enter>'<Enter>
-
 "--------------------------------"
 " file: ~/.vim/functions.vim :end"
 "--------------------------------"

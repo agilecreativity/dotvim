@@ -11,7 +11,7 @@ if has("autocmd")
   " }}}
 
   " CoffeeScript file {{{
-  aug filetype_swift
+  aug filetype_coffee
     au!
     au BufRead,BufNewFile *.coffee set filetype=coffee
   aug END

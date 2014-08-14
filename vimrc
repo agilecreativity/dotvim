@@ -3,7 +3,6 @@
 "--------------------"
 let s:vim_home = '~/.vim/'
 let os = substitute(system('uname'),"\n","","")
-
 let config_list =
 \ [
 \ 'base.vim',
@@ -16,7 +15,6 @@ let config_list =
 \ 'mappings.vim',
 \ 'plugin-settings/*.vim'
 \ ]
-
 for files in config_list
   for f in split(glob(s:vim_home.files), '\n')
     exec 'source '.f
@@ -81,4 +79,3 @@ let g:lawrencium_hg_executable = '/usr/local/bin/hg'
 " Set the backup directory just in case {{{
 set backupdir=~/.tmp
 " }}}
-

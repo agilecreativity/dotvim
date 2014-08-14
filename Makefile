@@ -1,5 +1,4 @@
 include MANIFEST
-
 TARGETS=$(dotfiles:%=$(HOME)/.%)
 CWD=$(shell pwd)
 

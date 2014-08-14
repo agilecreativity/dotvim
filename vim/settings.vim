@@ -1,7 +1,6 @@
 "------------------------------"
 " file: ~/.vim/setting.vim :beg"
 "------------------------------"
-
 syntax on
 let mapleader=","
 let localmapleader="\\"
@@ -31,7 +30,7 @@ set ignorecase
 set incsearch
 set laststatus=2
 set listchars=tab:▸\ ,trail:•,extends:»,precedes:«
-set list                       " show invisible characters
+set nolist                     " show invisible characters
 set nofoldenable
 set nojoinspaces               " use only 1 space when joining the lines, not 2
 set noswapfile
@@ -85,7 +84,6 @@ let g:rails_menu = 2
 " Useful abbreviation for some common mistake {{{
 ab q1  q!
 " }}}
-
 "------------------------------"
 " file: ~/.vim/setting.vim :end"
 "------------------------------"

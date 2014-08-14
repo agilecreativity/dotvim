@@ -1,5 +1,4 @@
 #!/usr/bin/env bash
-
 # If you enable 'YouCompleteMe' then you may need to uncomment the next line
 # ~/.vim/bundle/YouCompleteMe/install.sh
 

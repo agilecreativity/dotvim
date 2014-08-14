@@ -1,8 +1,6 @@
 include MANIFEST
-
 TARGETS=$(dotfiles:%=$(HOME)/.%)
 CWD=$(shell pwd)
-
 $(HOME)/.%: %
   @if [ -e $@ ]; then mv $@ $@.bak; fi
   @echo "Installing $<"

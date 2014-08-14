@@ -8,6 +8,7 @@ let NERDTreeIgnore =
 \ '\.so$',
 \ '\.egg$',
 \ '^\.git$',
+\ '^\.hg$',
 \ '^\.svn$',
 \ '^\.idea',
 \ '.min.js'
