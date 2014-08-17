@@ -5,15 +5,15 @@ let s:vim_home = '~/.vim/'
 let os = substitute(system('uname'),"\n","","")
 let config_list =
 \ [
-\ 'base.vim',
-\ 'plugins.vim',
-\ 'functions.vim',
-\ 'autocmds.vim',
-\ 'themes.vim',
-\ 'settings.vim',
-\ 'leaders.vim',
-\ 'mappings.vim',
-\ 'plugin-settings/*.vim'
+\ '01-base.vim',
+\ '02-plugins.vim',
+\ '03-functions.vim',
+\ '04-autocmds.vim',
+\ '05-themes.vim',
+\ '06-settings.vim',
+\ '07-leaders.vim',
+\ '08-mappings.vim',
+\ '09-plugins-setting.vim'
 \ ]
 for files in config_list
   for f in split(glob(s:vim_home.files), '\n')
@@ -54,11 +54,10 @@ set suffixesadd+=.js
 
 " Load custom configuration for a project
 function! AddCustomLoadPath()
-  if !empty(s:vim_home.'/custom_load_path.vim')
-    exec 'source '. s:vim_home . '/custom_load_path.vim'
+  if !empty(s:vim_home.'/10-custom_load_path.vim')
+    exec 'source '. s:vim_home . '/10-custom_load_path.vim'
   endif
 endfunction
-
 " }}}
 
 set nowrap
@@ -70,12 +69,14 @@ let g:lawrencium_hg_executable = '/usr/local/bin/hg'
 " file: ~/.vimrc :end"
 "--------------------"
 
-" If you don't want any backup at all {{{
+" Misc settings {{{
+" If you don't want any backup at all
 " set nobackup
 " set nowritebackup
 " set noswapfile
-" }}}
 
 " Set the backup directory just in case {{{
 set backupdir=~/.tmp
+
+map ,, :!ruby % <CR>
 " }}}
