@@ -61,10 +61,10 @@ map <leader>sp :split <C-R>=expand("%:p:h") . '/'<cr>
 map <leader>vp :vnew  <C-R>=expand("%:p:h") . '/'<cr>
 map <leader>y "*y
 
-map <leader>cn :sp  ~/Dropbox/notes/coding_notes.md.txt<cr>
-map <leader>pn :sp  ~/Dropbox/notes/project_notes.md.txt<cr>
-map <leader>pt :sp  ~/Dropbox/notes/todo_notes.md.txt<cr>
-map <leader>pv :sp  ~/Dropbox/notes/vim_notes.md.txt<cr>
+map <leader>cn :sp  ~/Dropbox/notes/coding_notes.md<cr>
+map <leader>pn :sp  ~/Dropbox/notes/project_notes.md<cr>
+map <leader>pt :sp  ~/Dropbox/notes/todo_notes.md<cr>
+map <leader>pv :sp  ~/Dropbox/notes/vim_notes.md<cr>
 map <leader>ez :sp  ~/Dropbox/dotfiles/zsh/zshrc<cr>
 
 map <leader>sv :so  ~/.vimrc<cr>
