@@ -78,5 +78,6 @@ let g:lawrencium_hg_executable = '/usr/local/bin/hg'
 " Set the backup directory just in case {{{
 set backupdir=~/.tmp
 
-map ,, :!ruby % <CR>
+" Quickly save and run the current file as ruby
+noremap ,, <Esc>:w<CR>:!ruby % <CR>
 " }}}
