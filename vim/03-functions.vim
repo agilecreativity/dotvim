@@ -1,6 +1,4 @@
-"--------------------------------"
-" file: ~/.vim/functions.vim :beg"
-"--------------------------------"
+" file: ~/.vim/functions.vim {{{
 " Rename current file {{{
 function! RenameFile()
   let old_name = expand('%')
@@ -121,8 +119,26 @@ endfunction
 nmap <C-x>G :call GitGrepWord()<CR>
 " }}}
 
+" Switch between CommandT and CtrlP
+function! FuzzySearchChooser()
+  if has('ruby')
+    " Use CommandT if we have ruby
+    if has('unix')
+      nnoremap <silent><C-t> :CommandT<CR>
+    else
+      nnoremap <silent><M-t> :CommandT<CR>
+    endif
+  else
+    if has('unix')
+      let g:ctrlp_map = '<C-t>'
+    else
+      let g:ctrlp_map = '<M-t>'
+    endif
+    nnoremap <leader>t :CtrlPRoot<CR>
+    nnoremap <leader>b :CtrlPBuffer<CR>
+  endif
+endfunction
+
 " TODO: Please remap this key to something else.
 "map <leader>gg :Ggrep -e '<C-R>=expand("<cword>")<Enter>'<Enter>
-"--------------------------------"
-" file: ~/.vim/functions.vim :end"
-"--------------------------------"
+" }}}

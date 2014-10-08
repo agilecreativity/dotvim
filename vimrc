@@ -63,8 +63,8 @@ endfunction
 set nowrap
 
 " Spikes - adding test for 'Mercurial' support in Vim
-let g:lawrencium_debug = 1
-let g:lawrencium_hg_executable = '/usr/local/bin/hg'
+"let g:lawrencium_debug = 1
+"let g:lawrencium_hg_executable = '/usr/local/bin/hg'
 "--------------------"
 " file: ~/.vimrc :end"
 "--------------------"
@@ -78,6 +78,9 @@ let g:lawrencium_hg_executable = '/usr/local/bin/hg'
 " Set the backup directory just in case {{{
 set backupdir=~/.tmp
 
-" Quickly save and run the current file as ruby
-noremap ,, <Esc>:w<CR>:!ruby % <CR>
+" If your current mood is Ruby then uncomment the next line
+"noremap ,, <Esc>:w<CR>:!/Users/agilecreativity/.rbenv/versions/2.1.4/bin/ruby % <CR>
+
+" If your current mood is Go then uncomment the next line
+noremap ,, <Esc>:w<CR>:!go run % <CR>
 " }}}

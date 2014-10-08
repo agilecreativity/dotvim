@@ -1,6 +1,4 @@
-"-------------------------------"
-" file: ~/.vim/autocmds.vim :beg"
-"-------------------------------"
+" file: ~/.vim/autocmds.vim {{{
 if has("autocmd")
   " Haskell file {{{
   aug filetype_swift
@@ -28,6 +26,7 @@ if has("autocmd")
   aug filetype_go
     au!
     au BufRead,BufNewFile *.go set filetype=go
+    au FileType go setl ts=4 sw=4 sts=4 et
   aug END
   " }}}
 
@@ -54,7 +53,7 @@ if has("autocmd")
     au!
     au BufRead,BufNewFile *.md,*.mkd,*.markdown set filetype=markdown
     " No wrap when I insert long [link](http://some-long-link-url/.../)
-    au Bufread,BufNewFile *.md,*.mkd,*.markdown set nowrap
+    au Bufread,BufNewFile *.md,*.mkd,*.markdown set wrap
     au BufRead,BufNewFile *.md,*.mkd,*.markdown set ai formatoptions=tcroqn2 comments=n:>
   aug END
   " }}}
@@ -157,6 +156,4 @@ if has("autocmd")
   aug END
   " }}}
 endif
-"-------------------------------"
-" file: ~/.vim/autocmds.vim :end"
-"-------------------------------"
+" }}}

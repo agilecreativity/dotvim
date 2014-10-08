@@ -1,6 +1,4 @@
-"------------------------------"
-" file: ~/.vim/setting.vim :beg"
-"------------------------------"
+" file: ~/.vim/setting.vim {{{
 syntax on
 let mapleader=","
 let localmapleader="\\"
@@ -81,9 +79,6 @@ set foldmethod=manual
 call MapCR()
 let g:rails_menu = 2
 
-" Useful abbreviation for some common mistake {{{
+" Useful abbreviation for some common mistake
 ab q1  q!
 " }}}
-"------------------------------"
-" file: ~/.vim/setting.vim :end"
-"------------------------------"
