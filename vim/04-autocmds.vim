@@ -1,7 +1,7 @@
 " file: ~/.vim/autocmds.vim {{{
 if has("autocmd")
   " Haskell file {{{
-  aug filetype_swift
+  aug filetype_haskell
     au!
     au BufRead,BufNewFile *.hs set filetype=haskell
   aug END
@@ -25,6 +25,7 @@ if has("autocmd")
   " Go file {{{
   aug filetype_go
     au!
+    au BufWritePre *.go Fmt
     au BufRead,BufNewFile *.go set filetype=go
     au FileType go setl ts=4 sw=4 sts=4 et
   aug END

@@ -52,7 +52,7 @@ Now you can build the CommandT as follow
 
 ``` shell
 cd ~/.vim/bundle/Command-T/ruby/command-t
-rbenv local system
+rbenv local system # or whatever the version we got back from `:ruby puts RUBY_VERSION` from inside Vim
 rbenv rehash
 ruby extconf.rb
 make
@@ -69,3 +69,7 @@ different computer that may or may not have the same version of vim configuratio
 For example you may use Mac at home but use Linux at work and some plugins
 (e.g. `CommandT`) may need to be compiled/configured differently based on the
 platform used.
+
+### TODOs
+
+- Learn to use the vim-dispach to test in the background!

@@ -1,0 +1,13 @@
+#!/usr/bin/env bash
+## If you enable 'YouCompleteMe' then you may need to uncomment the next line
+# ~/.vim/bundle/YouCompleteMe/install.sh
+
+## Note: for OSX you may need to do this first
+# sudo ln -fs /usr/local/bin/vim /usr/bin/vim
+
+## See: https://github.com/SirVer/ultisnips/blob/master/doc/UltiSnips.txt
+echo "Links ftpdetect folders for UltiSnips"
+rm -rf ~/.vim/ftdetect
+mkdir -p ~/.vim/ftdetect/
+ln -fs ~/.vim/bundle/ultisnips/ftdetect/* ~/.vim/ftdetect/
+echo "Done"

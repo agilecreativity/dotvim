@@ -71,7 +71,7 @@ function! DeleteComments()
   "" remove all blank lines
   silent! exec 'g/^\s*$/d'
 
-  "" raplace multiple blank lines with one
+  "" replace multiple blank lines with one
   "silent! exec 'g/^$/,/./-j'
 endfunction
 " }}}
@@ -101,7 +101,7 @@ function! GitGrep(...)
   set grepprg=git\ grep\ -n\ $*
   let s = 'grep'
   for i in a:000
-          let s = s . ' ' . i
+    let s = s . ' ' . i
   endfor
   exe s
   let &grepprg = save
@@ -140,5 +140,5 @@ function! FuzzySearchChooser()
 endfunction
 
 " TODO: Please remap this key to something else.
-"map <leader>gg :Ggrep -e '<C-R>=expand("<cword>")<Enter>'<Enter>
+noremap <leader>gg :Ggrep -e '<C-R>=expand("<cword>")<Enter>'<Enter>
 " }}}

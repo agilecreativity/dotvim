@@ -1,1 +1,1 @@
-dotfiles := vim vimrc gvimrc
+dotfiles := vim vimrc gvimrc vimrc.local
