@@ -48,6 +48,8 @@ NeoBundle 'SirVer/ultisnips'
 NeoBundle 'honza/vim-snippets'
 NeoBundle 'ervandew/supertab'
 NeoBundle 'terryma/vim-multiple-cursors'
+
+NeoBundle 'majutsushi/tagbar'
 " }}}
 
 NeoBundleCheck
