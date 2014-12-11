@@ -5,7 +5,6 @@ if has("autocmd")
     au!
     au BufRead,BufNewFile *.hs set filetype=haskell
   aug END
-
   " }}}
 
   " CoffeeScript file {{{
@@ -25,7 +24,7 @@ if has("autocmd")
   " Go file {{{
   aug filetype_go
     au!
-    au BufWritePre *.go Fmt
+    au BufWritePre *.go :GoImports
     au BufRead,BufNewFile *.go set filetype=go
     au FileType go setl ts=4 sw=4 sts=4 et
   aug END

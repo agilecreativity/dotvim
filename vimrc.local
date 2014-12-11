@@ -1,53 +1,18 @@
-"" file: ~/.vimrc.local [[[
+"" file: ~/.vimrc.local
 set nowrap
-
-"" Experimentation settings {{{
-" set autowrite
-" set nocursorline
-" set nowritebackup
-" set whichwrap+=<,>,h,l,[,] " Wrap arrow keys between lines
-" autocmd! bufwritepost .vimrc source ~/.vimrc
-" noremap! jk <ESC>
-"" }}}
-
-"" Note: Add proper suffixes to make this work {{{
-" see: http://usevim.com/2013/01/04/vim101-jumping/
-" This will make require './some_file' expands to './some_file.rb'
-"set suffixesadd+=.rb
-"set suffixesadd+=.js
-
-"" Custom ruby directories to make 'gf' works properly
-"set path+=tools/
-"set path+=app/jobs/
-"set path+=app/jobs/helpers/
-"set path+=app/controllers/
-"set path+=app/models
-"" javascript directories
-"set path+=public/javascripts/PX/
-"set path+=public/javascripts/PX/form/
-"" }}}
-
-" Backup related settings {{{
-" If you don't want any backup at all
-" set nobackup
-" set nowritebackup
-" set noswapfile
-
-" Set the backup directory just in case
 set backupdir=~/.tmp
-" }}}
 
 "" Quickly run the code from inside Vim {{{
 "" Note: use the full path if you need use differrent version of ruby
-"noremap ,, <Esc>:w<CR>:!ruby %<CR>
-noremap ,, <Esc>:w<CR>:!go run %<CR>
+noremap ;; <Esc>:w<CR>:!ruby %<CR>
+noremap ,, <Esc>:w<CR>:!$GOROOT/bin/go run %<CR>
 "" }}}
-"" ]]]
 
-" From: https://github.com/zenazn/dotfiles/blob/master/vimrc
+"" From: https://github.com/zenazn/dotfiles/blob/master/vimrc {{{
 " Trailing whitespace
 " highlight ExtraWhitespace ctermbg=red guibg=red
 " au ColorScheme * highlight ExtraWhitespace guibg=red
 " au BufEnter    * match ExtraWhitespace /\s\+$/
 " au InsertEnter * match ExtraWhitespace /\s\+\%#\@<!$/
 " au InsertLeave * match ExtraWhiteSpace /\s\+$/
+"" }}}

@@ -1,6 +1,4 @@
-"-------------------------------"
-" file: ~/.vim/mappings.vim :beg"
-"-------------------------------"
+" file: ~/.vim/mappings.vim {{{
 cmap w!! w !sudo tee % >/dev/null
 cnoremap %s/ %s/\v
 command!  OpenChangedFiles :call OpenChangedFiles()
@@ -57,6 +55,4 @@ vnoremap <silent> il :<c-u>norm!^vg_<cr>
 vnoremap > >gv
 
 xmap s <Plug>VSurround
-"-------------------------------"
-" file: ~/.vim/mappings.vim :end"
-"-------------------------------"
+" }}}

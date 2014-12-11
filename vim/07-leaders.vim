@@ -1,4 +1,3 @@
-" file: ~/.vim/leaders.vim {{{
 " Git related settings {{{
 map <leader>gac :Gcommit -a -m ""<left>
 map <leader>gb  :Gblame<cr>

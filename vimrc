@@ -34,15 +34,6 @@ if v:version > 703 || v:version == 703 && has("patch541")
 endif
 " }}}
 
-" Go setup for 'goimports' tool {{{
-filetype off
-filetype plugin indent off
-set runtimepath+=$GOROOT/misc/vim
-filetype plugin indent on
-syntax on
-" autocmd BufWritePre *.go Fmt
-" }}}
-
 "" Finally load custom config here if any {{{
 if filereadable(expand("~/.vimrc.local"))
   source ~/.vimrc.local
