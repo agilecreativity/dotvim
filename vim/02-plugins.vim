@@ -41,6 +41,7 @@ NeoBundle 'tpope/vim-surround'
 NeoBundle 'tpope/vim-unimpaired'
 NeoBundle 'tsaleh/vim-tmux'
 NeoBundle 'vim-ruby/vim-ruby'
+NeoBundle 'tmhedberg/matchit'
 NeoBundle 'wincent/Command-T'
 
 " https://github.com/Valloric/YouCompleteMe/issues/36
