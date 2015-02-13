@@ -53,4 +53,9 @@ NeoBundle 'terryma/vim-multiple-cursors'
 NeoBundle 'majutsushi/tagbar'
 " }}}
 
+" Note: the one that I have tried and may be still useful later {{{
+" NeoBundle 'junegunn/vim-github-dashboard'
+" NeoBundle 'jmcantrell/vim-virtualenv'
+" }}}
+
 NeoBundleCheck

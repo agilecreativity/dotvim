@@ -1,4 +1,4 @@
-" file: ~/.vimrc {{{
+"" file: ~/.vimrc
 let s:vim_home = '~/.vim/'
 let os = substitute(system('uname'),"\n","","")
 let config_list =
@@ -19,7 +19,7 @@ for files in config_list
   endfor
 endfor
 
-" Quick override settings {{{
+"" Quick override settings {{{
 set timeout timeoutlen=1000 ttimeoutlen=100
 set nolist
 
@@ -27,12 +27,12 @@ if has('mouse')
   set mouse=a
 endif
 
-" delete comment char when joining commented lines
+"" delete comment char when joining commented lines
 if v:version > 703 || v:version == 703 && has("patch541")
   " delete comment char when joining commented lines
   set formatoptions+=j
 endif
-" }}}
+"" }}}
 
 "" Finally load custom config here if any {{{
 if filereadable(expand("~/.vimrc.local"))
