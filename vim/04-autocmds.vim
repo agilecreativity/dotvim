@@ -84,6 +84,15 @@ if has("autocmd")
   aug END
 
   " }}}
+
+  " Auto-clean fugitive buffers {{{
+  " See: http://vimcasts.org/episodes/fugitive-vim-browsing-the-git-object-database/
+  aug figutive
+    au!
+    au BufReadPost fugitive://* set bufhidden=delete
+  aug END
+  " }}}
+
   " shared settings {{{
   aug shared_settings
     au!
