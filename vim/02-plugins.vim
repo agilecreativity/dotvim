@@ -51,7 +51,7 @@ NeoBundle 'honza/vim-snippets'
 NeoBundle 'ervandew/supertab'
 NeoBundle 'terryma/vim-multiple-cursors'
 NeoBundle 'majutsushi/tagbar'
-NeoBundle 'janko/vim-test'
+NeoBundle 'janko-m/vim-test'
 " }}}
 
 " Note: the one that I have tried and may be still useful later {{{
