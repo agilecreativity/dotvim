@@ -61,9 +61,12 @@ if has("autocmd")
   " ruby file {{{
   aug filetype_ruby
     au!
+    au BufRead,BufNewFile *.pp           set filetype=ruby
     au BufRead,BufNewFile *.ru,*.thor    set filetype=ruby
     au BufRead,BufNewFile [vV]agrantfile set filetype=ruby
     au BufRead,BufNewFile Gemfile        set filetype=ruby
+    au BufRead,BufNewFile Rakefile       set filetype=ruby
+    au BufRead,BufNewFile Puppetfile     set filetype=ruby
     au BufRead,BufNewFile Guardfile      set filetype=ruby
   aug END
   " }}}

@@ -4,7 +4,8 @@ set backupdir=~/.tmp
 
 "" Quickly run the code from inside Vim {{{
 "" Note: use the full path if you need use differrent version of ruby
-noremap ;; <Esc>:w<CR>:!~/.rbenv/shims/ruby %<CR>
+" noremap ;; <Esc>:w<CR>:!~/.rbenv/shims/ruby %<CR>
+noremap ;; <Esc>:w<CR>:!/opt/boxen/rbenv/shims/ruby %<CR>
 noremap ,, <Esc>:w<CR>:!$GOROOT/bin/go run %<CR>
 "" }}}
 
