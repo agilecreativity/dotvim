@@ -162,14 +162,14 @@ let g:snippets_dir=$HOME.'/.vim/bundle/vim-snippets/snippets'
 " See: https://github.com/Valloric/YouCompleteMe/issues/36
 "      http://stackoverflow.com/questions/14896327/ultisnips-and-youcompleteme/18685821#18685821
 
-"let g:ycm_collect_identifiers_from_tags_files = 1
 " make YCM compatible with UltiSnips (using supertab)
 let g:ycm_key_list_select_completion = ['<C-n>', '<Down>']
 let g:ycm_key_list_previous_completion = ['<C-p>', '<Up>']
 let g:SuperTabDefaultCompletionType = '<C-n>'
+let g:SuperTabCrMapping = 0
 
 " better key bindings for UltiSnipsExpandTrigger
-let g:UltiSnipsExpandTrigger = "<tab>"
+let g:UltiSnipsExpandTrigger = "<C-j>"
 let g:UltiSnipsJumpForwardTrigger = "<tab>"
 let g:UltiSnipsJumpBackwardTrigger = "<s-tab>"
 " }}}

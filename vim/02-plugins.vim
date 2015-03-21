@@ -52,6 +52,7 @@ NeoBundle 'ervandew/supertab'
 NeoBundle 'terryma/vim-multiple-cursors'
 NeoBundle 'majutsushi/tagbar'
 NeoBundle 'janko-m/vim-test'
+NeoBundle 'skammer/vim-css-color'
 " }}}
 
 " Note: the one that I have tried and may be still useful later {{{
