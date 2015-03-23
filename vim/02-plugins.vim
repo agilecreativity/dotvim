@@ -52,6 +52,7 @@ NeoBundle 'ervandew/supertab'
 NeoBundle 'terryma/vim-multiple-cursors'
 NeoBundle 'majutsushi/tagbar'
 NeoBundle 'janko-m/vim-test'
+NeoBundle 'vim-scripts/listmaps.vim'
 " }}}
 
 " Note: the one that I have tried and may be still useful later {{{
