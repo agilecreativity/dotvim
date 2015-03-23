@@ -97,9 +97,9 @@ let g:ScreenShellQuitOnVimExit = 0
 
 " Use the right ctags for the OS
 let os = substitute(system('uname'),"\n","","")
-
 if os == "Darwin"
-  let g:tagbar_ctags_bin="/usr/local/bin/ctags"
+  " As we use boxen, otherwise just `/usr/local/bin/ctag`
+  let g:tagbar_ctags_bin="/opt/boxen/homebrew/bin/ctags"
 elseif os == "Linux"
   let g:tagbar_ctags_bin="/usr/bin/ctags"
 endif

@@ -64,7 +64,7 @@ nnoremap <leader>xc :call DeleteComments()<cr>
 map <leader>co ggVG"*y
 " Note: for some reason on OSX, the path is always `/usr/bin/ctags`
 " To use the newer ctags, just override this in ~/.vimrc.local` with full-path
-noremap <leader>ct :!ctags -R .<cr>
+noremap <leader>ct :!/opt/boxen/homebrew/bin/ctags -R .<cr>
 map <leader>e :CommandT <C-R>=expand("%:p:h") . '/'<cr><cr>
 
 vnoremap <leader>h  :s/:\(\w*\) *=>/\1:/g<cr>
