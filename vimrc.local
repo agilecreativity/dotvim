@@ -8,7 +8,7 @@ set backupdir=~/.tmp
 " noremap ;; <Esc>:w<CR>:!/opt/boxen/rbenv/shims/ruby %<CR>
 noremap ;; <Esc>:w<CR>:!/opt/boxen/nodenv/shims/node %<CR>
 noremap ,, <Esc>:w<CR>:!$GOROOT/bin/go run %<CR>
-"noremap ,ct :!/opt/boxen/homebrew/bin/ctags -R . <CR>
+noremap ,ct :!/opt/boxen/homebrew/bin/ctags -R . <CR>
 "" }}}
 
 "" From: https://github.com/zenazn/dotfiles/blob/master/vimrc {{{
@@ -22,3 +22,6 @@ noremap ,, <Esc>:w<CR>:!$GOROOT/bin/go run %<CR>
 
 ""
 "let g:ycm_autoclose_preview_window_after_completion=1
+
+"" Note: current nodejs projects
+let g:CommandTWildIgnore=&wildignore . ",**/node_modules/*,**/app/assets/*,**/dist/*,**/tests/_vendor/*,**/*.svg"
