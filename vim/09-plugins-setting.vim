@@ -205,3 +205,11 @@ let g:tagbar_type_go = {
     \ 'ctagsargs' : '-sort -silent'
     \ }
 " }}}
+
+" Plugin: elzr/vim-json {{{
+let g:vim_json_syntax_conceal = 0
+" }}}
+
+" Plugin: airblade/vim-gitgutter {{{
+let g:gitgutter_max_signs = 5000
+" }}}

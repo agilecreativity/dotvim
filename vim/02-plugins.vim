@@ -55,6 +55,11 @@ NeoBundle 'janko-m/vim-test'
 NeoBundle 'vim-scripts/listmaps.vim'
 " }}}
 
+" nodejs related projects {{{
+NeoBundle  "moll/vim-node"
+NeoBundle  "elzr/vim-json"
+" }}}
+
 " Note: the one that I have tried and may be still useful later {{{
 " NeoBundle 'junegunn/vim-github-dashboard'
 " NeoBundle 'jmcantrell/vim-virtualenv'

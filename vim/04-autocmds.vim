@@ -1,5 +1,12 @@
 " file: ~/.vim/autocmds.vim {{{
 if has("autocmd")
+  " JSON file {{{
+  aug filetype_json
+    au!
+    au BufRead,BufNewFile *.json set filetype=json
+  aug END
+  " }}}
+
   " Haskell file {{{
   aug filetype_haskell
     au!
