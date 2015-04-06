@@ -3,26 +3,14 @@
 if executable("ag")
   let g:ackprg = 'ag --nogroup --column'
   set grepprg=ag\ --nogroup\ --nocolor
-  let g:ctrlp_user_command = 'ag %s -l --nocolor -g ""'
 endif
-" }}}
-
-" Plugin: Command-T.vim {{{
-" Open in split by default
-let g:CommandTAcceptSelectionSplitMap = ['<C-s>','<CR>']
-let g:CommandTAcceptSelectionMap      = ['<C-CR>']
-let g:CommandTCancelMap               = ['<C-x>','<C-c>','<esc>']
-let g:CommandTMatchWindowAtTop        = 1
 " }}}
 
 " Plugin: CtrlP {{{
-" Use Ag instead of grep when available
 if executable("ag")
   let g:ctrlp_user_command = 'ag %s -l --nocolor -g ""'
 endif
-
 let g:ctrlp_map = '<c-p>'
-"let g:ctrlp_user_command = 'ag %s -l --nocolor -g ""'
 let g:ctrlp_open_new_file = 't'
 let g:ctrlp_open_multiple_files = 't'
 let g:ctrlp_prompt_mappings = {
@@ -43,7 +31,7 @@ elseif os == "Linux"
 endif
 "$git config --global github.user agilecreativity
 if os == "Darwin" || os == "Linux"
-  let g:github_token = system('cat ~/codes/bitbucket/private-dotfiles/github/github_token.txt')
+  let g:github_token = system('cat ~/apps/private-dotfiles/github/github_token.txt')
 endif
 
 let g:gist_detect_filetype = 0

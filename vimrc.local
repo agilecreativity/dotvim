@@ -1,5 +1,5 @@
 "" file: ~/.vimrc.local
-set nowrap
+" set nowrap
 set backupdir=~/.tmp
 
 "" Quickly run the code from inside Vim {{{
@@ -22,14 +22,12 @@ noremap ,ct :!/opt/boxen/homebrew/bin/ctags -R . <CR>
 
 "let g:ycm_autoclose_preview_window_after_completion=1
 
-"" Note: Use this one if you don't need to search for assets directory!
-let g:CommandTWildIgnore=&wildignore . ",**/node_modules/*,**/app/assets/*,**/dist/*,**/tests/_vendor/*,**/*.svg"
-
-"" Note: Use this one if you want to search '**/app/assets/*'
-"let g:CommandTWildIgnore=&wildignore . ",**/node_modules/*,**/dist/*,**/tests/_vendor/*,**/*.svg"
 
 "" Add some runtimepath to make 'gf' work better
 set runtimepath+=.
 set runtimepath+=app
 set runtimepath+=app/widget
 set suffixesadd+=.coffee
+
+set number
+set wrap
