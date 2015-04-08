@@ -9,6 +9,8 @@ NeoBundle 'elixir-lang/vim-elixir'
 NeoBundle 'ervandew/screen'
 NeoBundle 'fatih/vim-go'
 NeoBundle 'flazz/vim-colorschemes'
+NeoBundle 'xolox/vim-misc'
+NeoBundle 'xolox/vim-colorscheme-switcher'
 NeoBundle 'junegunn/seoul256.vim'
 NeoBundle 'junegunn/vim-easy-align'
 NeoBundle 'kana/vim-textobj-lastpat'
@@ -58,6 +60,8 @@ NeoBundle 'vim-scripts/listmaps.vim'
 " nodejs related projects {{{
 NeoBundle  "moll/vim-node"
 NeoBundle  "elzr/vim-json"
+NeoBundle  "marijnh/tern_for_vim"
+NeoBundle  "othree/tern_for_vim_coffee"
 " }}}
 
 " Note: the one that I have tried and may be still useful later {{{

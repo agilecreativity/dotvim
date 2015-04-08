@@ -1,5 +1,4 @@
 "" file: ~/.vimrc.local
-" set nowrap
 set backupdir=~/.tmp
 
 "" Quickly run the code from inside Vim {{{
@@ -20,14 +19,25 @@ noremap ,ct :!/opt/boxen/homebrew/bin/ctags -R . <CR>
 " au InsertLeave * match ExtraWhiteSpace /\s\+$/
 "" }}}
 
-"let g:ycm_autoclose_preview_window_after_completion=1
-
-
-"" Add some runtimepath to make 'gf' work better
+"" Add some runtimepath to make 'gf' work better with current project
 set runtimepath+=.
+set runtimepath+=../widget
 set runtimepath+=app
 set runtimepath+=app/widget
+set runtimepath+=node_modules
+
 set suffixesadd+=.coffee
+set suffixesadd+=.json
 
 set number
-set wrap
+set nowrap
+
+"" Save the content of the last match e.g. :g// into the register @a
+"" See: http://goo.gl/VKdFvg
+nnoremap <silent> <F3> :redir @a<CR>:g//<CR>:redir END<CR>:new<CR>:put! a<CR>
+
+"" Try now color for a week
+colorscheme apprentice
+"colorscheme Tomorrow-Night
+"colorscheme darkburn
+"colorscheme Monokai-chris

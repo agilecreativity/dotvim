@@ -14,7 +14,7 @@ let g:CommandTMatchWindowReverse   = 1
 let g:CommandTMaxCachedDirectories = 10
 let g:CommandTMaxFiles             = 500000
 let g:CommandTScanDotDirectories   = 1
-let g:CommandTMaxHeight            = 20
+"let g:CommandTMaxHeight            = 40
 
 "" See: https://wt.pe/e
 if &term =~ 'screen' || &term =~ 'xterm'
@@ -29,7 +29,6 @@ if has('jumplist')
 endif
 
 nnoremap <leader>g :CommandTTag<CR>
-
 
 "" buffer/split/tab re-use magic
 function! s:BufHidden(buffer)
@@ -69,8 +68,7 @@ let g:CommandTAcceptSelectionTabCommand = 'GotoOrOpen tabe'
 let g:CommandTAcceptSelectionSplitCommand = 'GotoOrOpen sp'
 let g:CommandTAcceptSelectionVSplitCommand = 'GotoOrOpen vs'
 
-let g:CommandTAcceptSelectionSplitMap = ['<C-s>']
+let g:CommandTAcceptSelectionSplitMap = ['<C-s>','C-CR>']
 let g:CommandTAcceptSelectionMap      = ['<CR>', '<C-CR>']
 let g:CommandTCancelMap               = ['<C-x>','<C-c>','<esc>']
-
 "" }}}
