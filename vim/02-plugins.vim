@@ -47,7 +47,7 @@ NeoBundle 'tmhedberg/matchit'
 NeoBundle 'wincent/Command-T'
 
 " https://github.com/Valloric/YouCompleteMe/issues/36
-NeoBundle 'Valloric/YouCompleteMe'
+"NeoBundle 'Valloric/YouCompleteMe'
 NeoBundle 'SirVer/ultisnips'
 NeoBundle 'honza/vim-snippets'
 NeoBundle 'ervandew/supertab'
@@ -65,11 +65,15 @@ NeoBundle  "othree/tern_for_vim_coffee"
 " }}}
 
 NeoBundle "Keithbsmiley/swift.vim"
+NeoBundle "tfnico/vim-gradle"
+NeoBundle "vim-scripts/groovy.vim"
+
+" Let try the neocomplete.vim
+NeoBundle "Shougo/neocomplete.vim"
 
 " Note: the one that I have tried and may be still useful later {{{
 " NeoBundle 'junegunn/vim-github-dashboard'
 " NeoBundle 'jmcantrell/vim-virtualenv'
 " }}}
-
 
 NeoBundleCheck

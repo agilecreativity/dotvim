@@ -1,13 +1,18 @@
 ## Vim Configuration (dotvim)
-## Installation
+
+My dotvim using the `neocomplete.vim` instead of `YouCompleteMe` for
+code completion.
+
+## Basic Installation
 
 ```
-git clone https://github.com/agilecreativity/dotvim.git ~/dotvim
-cd ~/dotvim
+git clone https://github.com/agilecreativity/dotvim-neo.git ~/dotvim-neo
+cd ~/dotvim-neo
 git submodule init
 git submodule update
 make install
 ```
+
 ## Post-installation procedure
 
 ### Link to the private aliases

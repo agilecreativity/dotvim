@@ -41,3 +41,8 @@ colorscheme apprentice
 "colorscheme Tomorrow-Night
 "colorscheme darkburn
 "colorscheme Monokai-chris
+
+" See: http://eclim.org/vim/code_completion.html
+" You will need to use `Ctrl-X Ctrl-O` to start the completion
+let g:EclimCompletionMethod = 'omnifunc'
+
