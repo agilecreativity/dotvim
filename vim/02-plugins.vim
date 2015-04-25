@@ -70,6 +70,8 @@ NeoBundle "vim-scripts/groovy.vim"
 
 " Let try the neocomplete.vim
 NeoBundle "Shougo/neocomplete.vim"
+NeoBundle "Shougo/neosnippet.vim"
+NeoBundle "Shougo/vimshell.vim"
 
 " Note: the one that I have tried and may be still useful later {{{
 " NeoBundle 'junegunn/vim-github-dashboard'

@@ -44,5 +44,4 @@ colorscheme apprentice
 
 " See: http://eclim.org/vim/code_completion.html
 " You will need to use `Ctrl-X Ctrl-O` to start the completion
-let g:EclimCompletionMethod = 'omnifunc'
-
+"let g:EclimCompletionMethod = 'omnifunc'

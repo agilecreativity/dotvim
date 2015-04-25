@@ -14,7 +14,6 @@ let g:CommandTMatchWindowReverse   = 1
 let g:CommandTMaxCachedDirectories = 10
 let g:CommandTMaxFiles             = 500000
 let g:CommandTScanDotDirectories   = 1
-"let g:CommandTMaxHeight            = 40
 
 "" See: https://wt.pe/e
 if &term =~ 'screen' || &term =~ 'xterm'
@@ -63,9 +62,9 @@ endfunction
 
 command! -nargs=+ GotoOrOpen call s:GotoOrOpen(<f-args>)
 
-let g:CommandTAcceptSelectionCommand = 'GotoOrOpen e'
-let g:CommandTAcceptSelectionTabCommand = 'GotoOrOpen tabe'
-let g:CommandTAcceptSelectionSplitCommand = 'GotoOrOpen sp'
+let g:CommandTAcceptSelectionCommand       = 'GotoOrOpen e'
+let g:CommandTAcceptSelectionTabCommand    = 'GotoOrOpen tabe'
+let g:CommandTAcceptSelectionSplitCommand  = 'GotoOrOpen sp'
 let g:CommandTAcceptSelectionVSplitCommand = 'GotoOrOpen vs'
 
 let g:CommandTAcceptSelectionSplitMap = ['<C-s>','C-CR>']

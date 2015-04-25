@@ -12,8 +12,10 @@ let config_list =
 \ '07-leaders.vim',
 \ '08-mappings.vim',
 \ '09-plugins-setting.vim',
-\ '10-commandt-setting.vim'
+\ '10-commandt-setting.vim',
+\ '11-neocomplete-setting.vim'
 \ ]
+
 for files in config_list
   for f in split(glob(s:vim_home.files), '\n')
     exec 'source '.f
