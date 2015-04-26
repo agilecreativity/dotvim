@@ -79,6 +79,16 @@ set foldmethod=manual
 call MapCR()
 let g:rails_menu = 2
 
-" Useful abbreviation for some common mistake
+" Useful abbreviations
 ab q1  q!
+cnoreabbrev W! w!
+cnoreabbrev Q! q!
+cnoreabbrev Qall! qall!
+cnoreabbrev Wq wq
+cnoreabbrev Wa wa
+cnoreabbrev wQ wq
+cnoreabbrev WQ wq
+cnoreabbrev W w
+cnoreabbrev Q q
+cnoreabbrev Qall qall
 " }}}

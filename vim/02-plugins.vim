@@ -72,8 +72,10 @@ NeoBundle "vim-scripts/groovy.vim"
 NeoBundle "Shougo/neocomplete.vim"
 NeoBundle "Shougo/neosnippet.vim"
 NeoBundle "Shougo/vimshell.vim"
+NeoBundle 'bronson/vim-trailing-whitespace'
 
-" Note: the one that I have tried and may be still useful later {{{
+"" Note: the one that I have tried and may be still useful later {{{
+" NeoBundle "dansomething/vim-eclim"
 " NeoBundle 'junegunn/vim-github-dashboard'
 " NeoBundle 'jmcantrell/vim-virtualenv'
 " }}}
