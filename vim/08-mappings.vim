@@ -1,7 +1,7 @@
 " file: ~/.vim/mappings.vim {{{
 cmap w!! w !sudo tee % >/dev/null
 cnoremap %s/ %s/\v
-command!  OpenChangedFiles :call OpenChangedFiles()
+command! OpenChangedFiles :call OpenChangedFiles()
 
 inoremap <s-tab> <c-n>
 inoremap <tab> <c-r>=InsertTabWrapper()<cr>

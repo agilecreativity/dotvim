@@ -3,12 +3,12 @@
 
 " This is necessary to prevent errors when using vim as a pager.
 if exists("vimpager")
-    finish
+  finish
 endif
 
 if has("autocmd")
-   augroup UltiSnipsFileType
-      au!
-      autocmd FileType * call UltiSnips#FileTypeChanged()
-   augroup END
+  augroup UltiSnipsFileType
+    au!
+    autocmd FileType * call UltiSnips#FileTypeChanged()
+  augroup END
 endif

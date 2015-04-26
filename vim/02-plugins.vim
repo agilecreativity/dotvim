@@ -58,24 +58,25 @@ NeoBundle 'vim-scripts/listmaps.vim'
 " }}}
 
 " nodejs related projects {{{
-NeoBundle  "moll/vim-node"
-NeoBundle  "elzr/vim-json"
-NeoBundle  "marijnh/tern_for_vim"
-NeoBundle  "othree/tern_for_vim_coffee"
+NeoBundle 'moll/vim-node'
+NeoBundle 'elzr/vim-json'
+NeoBundle 'marijnh/tern_for_vim'
+NeoBundle 'othree/tern_for_vim_coffee'
 " }}}
 
-NeoBundle "Keithbsmiley/swift.vim"
-NeoBundle "tfnico/vim-gradle"
-NeoBundle "vim-scripts/groovy.vim"
+NeoBundle 'Keithbsmiley/swift.vim'
+NeoBundle 'tfnico/vim-gradle'
+NeoBundle 'vim-scripts/groovy.vim'
 
 " Let try the neocomplete.vim
-NeoBundle "Shougo/neocomplete.vim"
-NeoBundle "Shougo/neosnippet.vim"
-NeoBundle "Shougo/vimshell.vim"
+NeoBundle 'Shougo/neocomplete.vim'
+NeoBundle 'Shougo/neosnippet.vim'
+NeoBundle 'Shougo/vimshell.vim'
 NeoBundle 'bronson/vim-trailing-whitespace'
+NeoBundle 'sjl/gundo.vim'
 
 "" Note: the one that I have tried and may be still useful later {{{
-" NeoBundle "dansomething/vim-eclim"
+" NeoBundle 'dansomething/vim-eclim'
 " NeoBundle 'junegunn/vim-github-dashboard'
 " NeoBundle 'jmcantrell/vim-virtualenv'
 " }}}
