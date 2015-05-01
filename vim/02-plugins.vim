@@ -72,8 +72,11 @@ NeoBundle 'vim-scripts/groovy.vim'
 NeoBundle 'Shougo/neocomplete.vim'
 NeoBundle 'Shougo/neosnippet.vim'
 NeoBundle 'Shougo/vimshell.vim'
+NeoBundle 'Shougo/unite.vim'
+NeoBundle 'Shougo/vimfiler.vim'
 NeoBundle 'bronson/vim-trailing-whitespace'
 NeoBundle 'sjl/gundo.vim'
+NeoBundle 'digitaltoad/vim-jade'
 
 "" Note: the one that I have tried and may be still useful later {{{
 " NeoBundle 'dansomething/vim-eclim'

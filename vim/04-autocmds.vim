@@ -1,5 +1,12 @@
 " file: ~/.vim/autocmds.vim {{{
 if has("autocmd")
+  " Jade file {{{
+  aug filetype_jade
+    au!
+    au BufRead,BufNewFile *.jade set filetype=jade
+  aug END
+  " }}}
+
   " JSON file {{{
   aug filetype_json
     au!
