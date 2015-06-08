@@ -64,7 +64,7 @@ NeoBundle 'marijnh/tern_for_vim'
 NeoBundle 'othree/tern_for_vim_coffee'
 " }}}
 
-NeoBundle 'Keithbsmiley/swift.vim'
+NeoBundle 'keith/swift.vim'
 NeoBundle 'tfnico/vim-gradle'
 NeoBundle 'vim-scripts/groovy.vim'
 

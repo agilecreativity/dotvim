@@ -88,12 +88,16 @@ let os = substitute(system('uname'),"\n","","")
 if os == "Darwin"
   " As we use boxen, otherwise just `/usr/local/bin/ctag`
   let g:tagbar_ctags_bin="/opt/boxen/homebrew/bin/ctags"
+  " Index ctags from any project, including those outside Rails
+  map <leader>ct :!/opt/boxen/hombrew/bin/ctags -R .<cr>
 elseif os == "Linux"
   let g:tagbar_ctags_bin="/usr/bin/ctags"
+  " Index ctags from any project, including those outside Rails
+  map <leader>ct :!/usr/bin/ctags -R .<cr>
 endif
 
 " Index ctags from any project, including those outside Rails
-map <leader>ct :!ctags -R .<cr>
+" map <leader>ct :!ctags -R .<cr>
 
 " Show absolute line numbers
 let g:tagbar_show_linenumbers = 2
