@@ -69,10 +69,10 @@ noremap <leader>ct :!/opt/boxen/homebrew/bin/ctags -R .<cr>
 map <leader>e :CommandT <C-R>=expand("%:p:h") . '/'<cr><cr>
 
 "" change key => value to key: value in ruby
-vnoremap <leader>h  :s/:\(\w*\) *=>/\1:/g<cr>
+vnoremap <leader>h :s/:\(\w*\) *=>/\1:/g<cr>
 
 "" Replace multiple empty lines with one empty line
-vnoremap <leader>x  :s#\v^\_$\n\_^$##ge\|update\|s#\($\n\s*\)\+\%$##ge\|update<cr>
+vnoremap <leader>x :s#\v^\_$\n\_^$##ge\|update\|s#\($\n\s*\)\+\%$##ge\|update<cr>
 
 "" Start interactive EasyAlign in visual mode
 vmap <Enter> <Plug>(EasyAlign)

@@ -73,7 +73,18 @@ set wildignore+=*/assets/images/*
 set wildignore+=*/assets/documents/*
 set wildignore+=*/assets/images/*
 set wildignore+=tags,.tags
+set wildignore+=.min.js
+
+set wildignore+=*/js/*.min.js
+set wildignore+=*/js/*.min.css
+set wildignore+=*.ttf,*.woff,*.eot,*.ico,*icns,*.ri
+
+set wildignore+=*/virtualenv/*
+set wildignore+=*/web2py/scripts/*
+set wildignore+=*/gluon/contrib/*
+set wildignore+=*/gluon/*
 " }}}
+
 set foldmethod=manual
 
 call MapCR()

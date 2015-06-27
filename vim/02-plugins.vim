@@ -77,6 +77,7 @@ NeoBundle 'Shougo/vimfiler.vim'
 NeoBundle 'bronson/vim-trailing-whitespace'
 NeoBundle 'sjl/gundo.vim'
 NeoBundle 'digitaltoad/vim-jade'
+NeoBundle 'Raimondi/delimitMate'
 
 "" Note: the one that I have tried and may be still useful later {{{
 " NeoBundle 'dansomething/vim-eclim'
