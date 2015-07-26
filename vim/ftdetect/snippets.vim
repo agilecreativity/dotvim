@@ -1,4 +1,1 @@
-" recognize .snippet files
-if has("autocmd")
-  autocmd BufNewFile,BufRead *.snippets setf snippets
-endif
+/Users/bchoomnuan/.vim/bundle/ultisnips/ftdetect/snippets.vim

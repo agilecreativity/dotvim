@@ -13,22 +13,16 @@ map <leader>gw  :!git add . && git commit -m 'WIP'<cr>
 map <leader>f  :CommandTFlush<cr>\|:CommandT<cr>
 map <leader>F  :CommandTFlush<cr>\|:CommandT %%<cr>
 map <leader>gt :CommandTFlush<cr>\|:CommandTTag<cr>
+
 nnoremap <silent> <leader>b :CommandTBuffer<cr>
 nnoremap <silent> <leader>t :CommandT<cr>
 
+"" Note: if CommandT is not working use ContrlP
+"nnoremap <silent> <leader>b :CtrlPBuffer<cr>
+"nnoremap <silent> <leader>t :CtrlP<cr>
+
 "map <leader>aa :topleft 100 :split Gemfile<cr>
 "map <leader>gl :CommandTFlush<cr>\|:CommandT lib<cr>
-"" }}}
-
-"" Tmux related settings {{{
-""command! -nargs=? -complete=shellcmd W  :w! | :call ScreenShellSend("load '".@%."';")
-" map <leader>rc :ScreenShellVertical bundle exec rails c test<cr>
-" map <leader>rl :w<cr> :call ScreenShellSend("rspec ".@% . ':' . line('.'))<cr>
-" map <leader>rr :w<cr> :call ScreenShellSend("rspec ".@%)<cr>
-" map <leader>rt :w<cr> :call ScreenShellSend("reload!")<cr>
-" map <leader>,  :w<cr>
-"   \:call ScreenShellSend("reload!")<cr>
-"   \:call ScreenShellSend("rspec ".@% . ':' . line('.'))<cr>
 "" }}}
 
 "" vim-spec related settings {{{
@@ -53,7 +47,7 @@ map <leader>pn :sp ~/Dropbox/notes/project_notes.md<cr>
 map <leader>sv :so ~/.vimrc<cr>
 map <leader>vv :sp ~/dotvim/vimrc<cr>
 
-nnoremap <leader>a  :Ag<space>
+nnoremap <leader>a  :Ag!<space>
 nnoremap <leader>l  :ls<cr>:b
 nnoremap <leader>nr :setlocal number!<cr>
 

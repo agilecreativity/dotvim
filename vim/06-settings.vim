@@ -8,7 +8,6 @@ let localmapleader="\\"
 
 " Note: work best with NERDTree when we rename/move/delete file
 set hidden                     " allow background buffers without writing them
-
 set autoindent
 set autoread                   " auto-reload buffer when file changed on disk
 set backspace=indent,eol,start " allow backspacing over everythings in insert mode
@@ -78,11 +77,6 @@ set wildignore+=.min.js
 set wildignore+=*/js/*.min.js
 set wildignore+=*/js/*.min.css
 set wildignore+=*.ttf,*.woff,*.eot,*.ico,*icns,*.ri
-
-set wildignore+=*/virtualenv/*
-set wildignore+=*/web2py/scripts/*
-set wildignore+=*/gluon/contrib/*
-set wildignore+=*/gluon/*
 " }}}
 
 set foldmethod=manual

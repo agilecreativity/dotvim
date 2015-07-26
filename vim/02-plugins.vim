@@ -85,4 +85,8 @@ NeoBundle 'Raimondi/delimitMate'
 " NeoBundle 'jmcantrell/vim-virtualenv'
 " }}}
 
+NeoBundle 'rizzatti/dash.vim'
+" for testing only!
+NeoBundle 'scrooloose/syntastic'
+
 NeoBundleCheck

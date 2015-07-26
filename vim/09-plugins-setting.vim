@@ -1,8 +1,14 @@
 " Plugin: ag.vim  {{{
 " Use Ag instead of grep when available
-if executable("ag")
-  let g:ackprg = 'ag --nogroup --column'
-  set grepprg=ag\ --nogroup\ --nocolor
+" if executable("ag")
+"   let g:ackprg = 'ag --nogroup --column'
+"   set grepprg=pt\ --nogroup\ --nocolor
+" endif
+
+" Experimental use of 'pt' instead of 'ag
+if executable("pt")
+  let g:ackprg = 'pt --nogroup --column'
+  set grepprg=pt\ --nogroup\ --nocolor
 endif
 " }}}
 
@@ -10,6 +16,7 @@ endif
 if executable("ag")
   let g:ctrlp_user_command = 'ag %s -l --nocolor -g ""'
 endif
+
 let g:ctrlp_map = '<c-p>'
 let g:ctrlp_open_new_file = 't'
 let g:ctrlp_open_multiple_files = 't'
@@ -17,6 +24,7 @@ let g:ctrlp_prompt_mappings = {
   \   'AcceptSelection("e")': [],
   \   'AcceptSelection("t")': ['<cr>', '<c-m>']
   \ }
+
 let g:ctrlp_working_path_mode = 'w'
 let g:ctrlp_reuse_window = 'netrw'
 " }}}
