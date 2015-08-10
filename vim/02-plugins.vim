@@ -86,7 +86,10 @@ NeoBundle 'Raimondi/delimitMate'
 " }}}
 
 NeoBundle 'rizzatti/dash.vim'
+" NeoBundle 'tpope/vim-fireplace'
+" NeoBundle 'tpope/vim-salve'
+
 " for testing only!
-NeoBundle 'scrooloose/syntastic'
+"NeoBundle 'scrooloose/syntastic'
 
 NeoBundleCheck

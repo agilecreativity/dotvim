@@ -6,7 +6,6 @@ let g:CommandTWildIgnore = &wildignore .
       \ ",**/tmp/*" .
       \ ",**/bower_components/*" .
       \ ",**/node_modules/*" .
-      \ ",**/app/assets/*"  .
       \ ",**/dist/*" .
       \ ",**/tests/_vendor/*,**/*.svg"
 
@@ -20,7 +19,8 @@ if &term =~ 'screen' || &term =~ 'xterm'
   let g:CommandTCancelMap = ['<ESC>', '<C-c>']
 endif
 
-set switchbuf=usetab
+"set switchbuf=usetab
+"set switchbuf=useopen
 
 "" mappings
 if has('jumplist')
