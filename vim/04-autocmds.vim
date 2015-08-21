@@ -44,6 +44,15 @@ if has("autocmd")
   aug END
   " }}}
 
+  " Lisp file {{{
+  aug filetype_lisp
+    au!
+    " Note: may be use the default setting
+    au BufRead,BufNewFile *.el set filetype=lisp
+    au FileType el setl ts=2 sw=2 sts=2 et
+  aug END
+  " }}}
+
   " vimscript file {{{
   aug filetype_vim
     au!
@@ -113,10 +122,11 @@ if has("autocmd")
   " shared settings {{{
   aug shared_settings
     au!
-    au FileType ruby,haml,eruby,yaml,html,javascript,sass,cucumber set ai sw=2 sts=2 et
+    au FileType ruby,haml,eruby,yaml,html,javascript,sass,cucumber,slim set ai sw=2 sts=2 et
     au FileType python set sw=4 sts=4 et
 
     au! BufRead,BufNewFile *.sass setfiletype sass
+    au! BufRead,BufNewFile *.slim setfiletype slim
     au BufNewFile,BufRead  *.css  set fdm=marker fmr={,}
 
     " Leave the return key alone when in command line windows, since it's used to run commands there.

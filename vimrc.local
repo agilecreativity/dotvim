@@ -9,6 +9,8 @@ set backupdir=~/.tmp
 noremap <leader>ct :!/opt/boxen/homebrew/bin/ctags -R . <CR>
 noremap <leader>,  <Esc>:w<CR>:!$GOROOT/bin/go run %<CR>
 noremap ;;         <Esc>:w<CR>:r !$GOROOT/bin/go run %<CR>
+noremap <leader>c  <Esc>:w<CR>:!cljsc %<CR>
+noremap <leader>r  <Esc>:w<CR>:r !cljsc %<CR>
 "" }}}
 
 "" From: https://github.com/zenazn/dotfiles/blob/master/vimrc {{{

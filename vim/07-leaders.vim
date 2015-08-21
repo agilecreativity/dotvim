@@ -54,7 +54,6 @@ nnoremap <leader>nr :setlocal number!<cr>
 command! GdiffInTab tabedit %|vsplit|Gdiff
 nnoremap <leader>d :GdiffInTab<cr>
 nnoremap <leader>D :tabclose<cr>
-nnoremap <leader>xc :call DeleteComments()<cr>
 
 map <leader>co ggVG"*y
 "" Note: for some reason on OSX, the path is always `/usr/bin/ctags`
@@ -62,8 +61,13 @@ map <leader>co ggVG"*y
 noremap <leader>ct :!/opt/boxen/homebrew/bin/ctags -R .<cr>
 map <leader>e :CommandT <C-R>=expand("%:p:h") . '/'<cr><cr>
 
+"" Delete the comment lines (default to #) from the file
+nnoremap <leader>xc :call DeleteComments()<cr>
+nnoremap <leader>xb :s#\v^\_$\n\_^$##ge\|update\|s#\($\n\s*\)\+\%$##ge\|update<cr>
+
 "" change key => value to key: value in ruby
-vnoremap <leader>h :s/:\(\w*\) *=>/\1:/g<cr>
+"vnoremap <leader>h :s/:\(\w*\) *=>/\1:/g<cr>
+nnoremap <leader>h :s/:\(\w*\) *=>/\1:/g<cr>
 
 "" Replace multiple empty lines with one empty line
 vnoremap <leader>x :s#\v^\_$\n\_^$##ge\|update\|s#\($\n\s*\)\+\%$##ge\|update<cr>

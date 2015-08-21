@@ -59,7 +59,7 @@ function! MapCR()
 endfunction
 " }}}
 
-" function: delete all comment start with # {{{
+" Delete all comment start with # {{{
 function! DeleteComments()
   "" remove all comment lines starting with '#' skiping the first line.
   "" e.g. this will work better when we need to deal with (#!/usr/bin/env ruby)
@@ -75,6 +75,11 @@ function! DeleteComments()
   "silent! exec 'g/^$/,/./-j'
 endfunction
 " }}}
+
+" Replace multiple blank lines with one if any
+function! CompressBlankLines()
+  silent! exec 'g/^$/,/./-j'
+endfunction
 
 " Note: to delete all trailing whitespace for each file in repo (VERY DESTRUCTIVE!)
 " map <leader>W :args `git grep -lI .` \| argdo %s/\s\+$//gce \| w<cr>
