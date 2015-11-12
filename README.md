@@ -75,6 +75,6 @@ For example you may use Mac at home but use Linux at work and some plugins
 (e.g. `CommandT`) may need to be compiled/configured differently based on the
 platform used.
 
-### TODOs
+### Tips
 
-- Learn to use the vim-dispach to test in the background!
+- [Writing Clojure in Vim](https://robots.thoughtbot.com/writing-clojure-in-vim)

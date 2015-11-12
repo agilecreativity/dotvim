@@ -68,5 +68,10 @@ NeoBundle 'wincent/Command-T'
 NeoBundle 'xolox/vim-colorscheme-switcher'
 NeoBundle 'xolox/vim-misc'
 
+"" Some plugins for editing Clojure
+NeoBundle 'tpope/vim-sexp-mappings-for-regular-people'
+NeoBundle 'guns/vim-sexp'
+NeoBundle 'tpope/vim-surround'
+
 NeoBundleCheck
 " }}}
