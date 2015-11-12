@@ -1,6 +1,5 @@
 " file: ~/.vim/plugins.vim {{{
 NeoBundle 'MarcWeber/vim-addon-mw-utils'
-NeoBundle 'Raimondi/delimitMate'
 NeoBundle 'Shougo/neocomplete.vim'
 NeoBundle 'Shougo/neosnippet.vim'
 NeoBundle 'Shougo/vimfiler.vim'
@@ -50,6 +49,7 @@ NeoBundle 'tomtom/tcomment_vim'
 NeoBundle 'tomtom/tlib_vim'
 NeoBundle 'tpope/vim-bundler'
 NeoBundle 'tpope/vim-dispatch'
+NeoBundle 'tpope/vim-endwise'
 NeoBundle 'tpope/vim-fugitive'
 NeoBundle 'tpope/vim-git'
 NeoBundle 'tpope/vim-haml'
@@ -68,7 +68,7 @@ NeoBundle 'wincent/Command-T'
 NeoBundle 'xolox/vim-colorscheme-switcher'
 NeoBundle 'xolox/vim-misc'
 
-"" Some plugins for editing Clojure
+"" Better plugins for editing Clojure files
 NeoBundle 'tpope/vim-sexp-mappings-for-regular-people'
 NeoBundle 'guns/vim-sexp'
 NeoBundle 'tpope/vim-surround'
