@@ -5,10 +5,13 @@ set backupdir=~/.tmp
 "" Note: use the full path if you need use differrent version of ruby
 "noremap ;; <Esc>:w<CR>:!~/.rbenv/shims/ruby %<CR>
 "noremap ;; <Esc>:w<CR>:!/opt/boxen/nodenv/shims/node %<CR>
-"noremap ;; <Esc>:w<CR>:!/opt/boxen/rbenv/shims/ruby %<CR>
+
+noremap  <leader>, <Esc>:w<CR>:!/opt/boxen/rbenv/shims/ruby %<CR>
 noremap <leader>ct :!/opt/boxen/homebrew/bin/ctags -R . <CR>
-noremap <leader>,  <Esc>:w<CR>:!$GOROOT/bin/go run %<CR>
-noremap ;;         <Esc>:w<CR>:r !$GOROOT/bin/go run %<CR>
+
+"noremap <leader>, <Esc>:w<CR>:!$GOROOT/bin/go run %<CR>
+"noremap <leader>,  <Esc>:w<CR>:!cljsc %<CR>
+"noremap ;;         <Esc>:w<CR>:r !$GOROOT/bin/go run %<CR>
 noremap <leader>c  <Esc>:w<CR>:!cljsc %<CR>
 noremap <leader>r  <Esc>:w<CR>:r !cljsc %<CR>
 "" }}}
@@ -38,5 +41,9 @@ set nowrap
 "" Save the content of the last match e.g. :g// into the register @a
 "" See: http://goo.gl/VKdFvg
 nnoremap <silent> <F3> :redir @a<CR>:g//<CR>:redir END<CR>:new<CR>:put! a<CR>
+
+"" Experimental mappings
+"" See: http://stackoverflow.com/questions/916875/yank-file-name-path-of-current-buffer-in-vim
+nmap cp :let @+ = expand("%")<CR>
 
 colorscheme apprentice

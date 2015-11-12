@@ -21,10 +21,6 @@ nnoremap <silent> <leader>t :CommandT<cr>
 "nnoremap <silent> <leader>b :CtrlPBuffer<cr>
 "nnoremap <silent> <leader>t :CtrlP<cr>
 
-"map <leader>aa :topleft 100 :split Gemfile<cr>
-"map <leader>gl :CommandTFlush<cr>\|:CommandT lib<cr>
-"" }}}
-
 "" vim-spec related settings {{{
 map <leader>sd :call RunLastSpec()<cr>
 map <leader>sj :call RunNearestSpec()<cr>
@@ -67,7 +63,7 @@ nnoremap <leader>xb :s#\v^\_$\n\_^$##ge\|update\|s#\($\n\s*\)\+\%$##ge\|update<c
 
 "" change key => value to key: value in ruby
 "vnoremap <leader>h :s/:\(\w*\) *=>/\1:/g<cr>
-nnoremap <leader>h :s/:\(\w*\) *=>/\1:/g<cr>
+nnoremap <leader>h :% s/:\(\w*\) *=>/\1:/g<cr>
 
 "" Replace multiple empty lines with one empty line
 vnoremap <leader>x :s#\v^\_$\n\_^$##ge\|update\|s#\($\n\s*\)\+\%$##ge\|update<cr>
