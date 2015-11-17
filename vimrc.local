@@ -7,7 +7,7 @@ set backupdir=~/.tmp
 "noremap ;; <Esc>:w<CR>:!/opt/boxen/nodenv/shims/node %<CR>
 
 noremap  <leader>, <Esc>:w<CR>:!/opt/boxen/rbenv/shims/ruby %<CR>
-noremap <leader>ct :!/opt/boxen/homebrew/bin/ctags -R . <CR>
+noremap <leader>ct :!/opt/boxen/homebrew/bin/ctags -R --exclude=\*.js --exclude=vendor/\* .<CR>
 
 "noremap <leader>, <Esc>:w<CR>:!$GOROOT/bin/go run %<CR>
 "noremap <leader>,  <Esc>:w<CR>:!cljsc %<CR>
