@@ -1,4 +1,4 @@
-" file: ~/.vim/02-plugins.vim {{{
+"" file: ~/.vim/02-plugins.vim {{{
 NeoBundle 'MarcWeber/vim-addon-mw-utils'
 NeoBundle 'Shougo/neocomplete.vim'
 NeoBundle 'Shougo/neosnippet.vim'
@@ -73,4 +73,4 @@ NeoBundle 'xolox/vim-colorscheme-switcher'
 NeoBundle 'xolox/vim-misc'
 
 NeoBundleCheck
-" }}}
+"" }}}

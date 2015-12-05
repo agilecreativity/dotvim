@@ -1,12 +1,25 @@
-" file: ~/.vim/06-setting.vim {{{
+"" file: ~/.vim/06-setting.vim {{{
 syntax on
 let mapleader=","
 let localmapleader="\\"
 
+set timeout timeoutlen=1000 ttimeoutlen=100
+set nolist
+
+if has('mouse')
+  set mouse=a
+endif
+
+"" delete comment char when joining commented lines
+if v:version > 703 || v:version == 703 && has("patch541")
+  " delete comment char when joining commented lines
+  set formatoptions+=j
+endif
+
 "set clipboard=unnamed
 "inoremap <esc> <nop>
 
-" Note: work best with NERDTree when we rename/move/delete file
+"" Work best with NERDTree when we rename/move/delete file
 set hidden                     " allow background buffers without writing them
 set autoindent
 set autoread                   " auto-reload buffer when file changed on disk

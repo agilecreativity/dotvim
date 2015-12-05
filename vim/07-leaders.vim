@@ -1,53 +1,26 @@
-"" Git related settings {{{
+"" file: ~/.vim/07-leaders.vim {{{
+"" Git related settings
 map <leader>gac :Gcommit -a -m ""<left>
 map <leader>gb  :Gblame<cr>
 map <leader>gc  :Gcommit -m "wip: "<left>
 map <leader>gs  :Gstatus<cr>
-
-"" Note: only commit but don't push to remote branch
-"" don't push the code until we have squash it properly!
 map <leader>gw  :!git add . && git commit -m 'WIP'<cr>
-"" }}}
 
-"" CommandT related settings {{{
-"map <leader>f  :CommandTFlush<cr>\|:CommandT<cr>
-"map <leader>F  :CommandTFlush<cr>\|:CommandT %%<cr>
-"map <leader>gt :CommandTFlush<cr>\|:CommandTTag<cr>
-
-"" Note: if CommandT is available and setup then use it
+"" CommandT related settings
+map <leader>f :CommandTFlush<cr>\|:CommandT<cr>
+map <leader>F :CommandTFlush<cr>\|:CommandT %%<cr>
 nnoremap <silent> <leader>b :CommandTBuffer<cr>
 nnoremap <silent> <leader>t :CommandT<cr>
 
-"" Note: if CommandT is not working use ContrlP
+"" If CommandT is not working use ContrlP
 "nnoremap <silent> <leader>b :CtrlPBuffer<cr>
 "nnoremap <silent> <leader>t :CtrlP<cr>
 
-"" vim-spec related settings {{{
-"map <leader>sd :call RunLastSpec()<cr>
-"map <leader>sj :call RunNearestSpec()<cr>
-"map <leader>ss :call RunCurrentSpecFile()<cr>
-"" }}}
-
-"" NERDTree related setting {{{
 nnoremap <leader>nf :NERDTreeFind<cr>
 nnoremap <leader>n  :NERDTreeToggle<cr>
-"" }}}
-
-"" Misc settings {{{
-map <leader>rn :call RenameFile()<cr>
-map <leader>sn :sp ~/.vim/bundle/vim-snippets/snippets/ruby.snippets<cr>
-map <leader>sp :split <C-R>=expand("%:p:h") . '/'<cr>
-map <leader>vp :vnew  <C-R>=expand("%:p:h") . '/'<cr>
-map <leader>y "*y
-map <leader>cn :sp ~/Dropbox/notes/coding_notes.md<cr>
-map <leader>pn :sp ~/Dropbox/notes/project_notes.md<cr>
-map <leader>sv :so ~/.vimrc<cr>
-map <leader>vv :sp ~/dotvim/vimrc<cr>
-
 nnoremap <leader>a  :Ag!<space>
 nnoremap <leader>l  :ls<cr>:b
 nnoremap <leader>nr :setlocal number!<cr>
-
 command! GdiffInTab tabedit %|vsplit|Gdiff
 nnoremap <leader>d :GdiffInTab<cr>
 nnoremap <leader>D :tabclose<cr>
@@ -57,7 +30,6 @@ map <leader>co ggVG"*y
 "" To use the newer ctags, just override this in ~/.vimrc.local` with full-path
 "noremap <leader>ct :!/opt/boxen/homebrew/bin/ctags -R .<cr>
 noremap <leader>ct :!/opt/boxen/homebrew/bin/ctags -R --exclude=\*.js --exclude=vendor/\* .<cr>
-
 map <leader>e :CommandT <C-R>=expand("%:p:h") . '/'<cr><cr>
 
 "" Delete the comment lines (default to #) from the file
@@ -73,4 +45,14 @@ vnoremap <leader>x :s#\v^\_$\n\_^$##ge\|update\|s#\($\n\s*\)\+\%$##ge\|update<cr
 
 "" Start interactive EasyAlign in visual mode
 vmap <Enter> <Plug>(EasyAlign)
+
+map <leader>rn :call RenameFile()<cr>
+map <leader>sn :sp ~/.vim/bundle/vim-snippets/snippets/ruby.snippets<cr>
+map <leader>sp :split <C-R>=expand("%:p:h") . '/'<cr>
+map <leader>vp :vnew  <C-R>=expand("%:p:h") . '/'<cr>
+map <leader>y "*y
+map <leader>cn :sp ~/Dropbox/notes/coding_notes.md<cr>
+map <leader>pn :sp ~/Dropbox/notes/project_notes.md<cr>
+map <leader>sv :so ~/.vimrc<cr>
+map <leader>vv :sp ~/dotvim/vimrc<cr>
 "" }}}

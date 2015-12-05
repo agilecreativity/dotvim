@@ -1,5 +1,5 @@
-" file: ~/.vim/03-functions.vim {{{
-" Rename current file {{{
+"" file: ~/.vim/03-functions.vim {{{
+"" Rename current file {{{
 function! RenameFile()
   let old_name = expand('%')
   let new_name = input('New file name: ', expand('%'), 'file')
@@ -9,11 +9,11 @@ function! RenameFile()
     redraw!
   endif
 endfunction
-" }}}
+"" }}}
 
-" Multi-purpose tab key {{{
-" Indent if we're at the beginning of a line. Else, do completion.
-" Credit: Gary Bernhardt
+"" Multi-purpose tab key {{{
+"" Indent if we're at the beginning of a line. Else, do completion.
+"" Credit: Gary Bernhardt
 function! InsertTabWrapper()
   let col = col('.') - 1
   if !col || getline('.')[col - 1] !~ '\k'
@@ -22,9 +22,9 @@ function! InsertTabWrapper()
     return "\<c-p>"
   endif
 endfunction
-" }}}
+"" }}}
 
-" Open a split for each dirty file in git {{{
+"" Open a split for each dirty file in git {{{
 function! OpenChangedFiles()
   only " Close all windows, unless they're modified
   let status = system('git status -s | grep "^ \?\(M\|A\|UU\)" | sed "s/^.\{3\}//"')
@@ -34,9 +34,9 @@ function! OpenChangedFiles()
     exec "sp " . filename
   endfor
 endfunction
-" }}}
+"" }}}
 
-" Merge a tab into a split in the previous window {{{
+"" Merge a tab into a split in the previous window {{{
 function! MergeTabs()
   if tabpagenr() == 1
     return
@@ -51,15 +51,15 @@ function! MergeTabs()
   split
   execute "buffer " . bufferName
 endfunction
-" }}}
+"" }}}
 
-" Clear the search buffer when hitting return {{{
+"" Clear the search buffer when hitting return {{{
 function! MapCR()
   nnoremap <cr> :nohlsearch<cr>
 endfunction
-" }}}
+"" }}}
 
-" Delete all comment start with # {{{
+"" Delete all comment start with # {{{
 function! DeleteComments()
   "" remove all comment lines starting with '#' skiping the first line.
   "" e.g. this will work better when we need to deal with (#!/usr/bin/env ruby)
@@ -74,20 +74,19 @@ function! DeleteComments()
   "" replace multiple blank lines with one
   "silent! exec 'g/^$/,/./-j'
 endfunction
-" }}}
+"" }}}
 
-" Replace multiple blank lines with one if any
+"" Replace multiple blank lines with one if any
 function! CompressBlankLines()
   silent! exec 'g/^$/,/./-j'
 endfunction
 
-" Note: to delete all trailing whitespace for each file in repo (VERY DESTRUCTIVE!)
+"" Note: to delete all trailing whitespace for each file in repo (VERY DESTRUCTIVE!)
 " map <leader>W :args `git grep -lI .` \| argdo %s/\s\+$//gce \| w<cr>
 
-" Print the information about the ruby version built with vim {{{
-" Example from 'Scriping Vim with Ruby' by Matt Margolis (Madison Ruby 2011)
-" Tips: for real world example see 'github.com/sjbach/lusty'
-" see: :h ruby
+"" Print the information about the ruby version built with vim {{{
+"" Example from 'Scriping Vim with Ruby' by Matt Margolis (Madison Ruby 2011)
+"" Tips: for real world example see 'github.com/sjbach/lusty'
 function! RubyInfo()
   ruby <<EOF
     puts "Your Vim's ruby information:"
@@ -96,10 +95,10 @@ function! RubyInfo()
     puts "release date : #{RUBY_RELEASE_DATE}"
 EOF
 endfunction
-" }}}
+"" }}}
 
-" Wrapper function to `git grep` command {{{
-" Thanks to [Aaron Patterson's dotfile](https://github.com/tenderlove/dot_vim/blob/master/vimrc)
+"" Wrapper function to `git grep` command {{{
+"" Thanks to [Aaron Patterson's dotfile](https://github.com/tenderlove/dot_vim/blob/master/vimrc)
 function! GitGrep(...)
   let save = &grepprg
   set grepprg=git\ grep\ -n\ $*
@@ -112,18 +111,18 @@ function! GitGrep(...)
 endfunction
 
 command -nargs=? G call GitGrep(<f-args>)
-" }}}
+"" }}}
 
-" Wrapper function go `git grep` for word boundary {{{
+"" Wrapper function go `git grep` for word boundary {{{
 function! GitGrepWord()
   normal! "zyiw
   call GitGrep('-w -e ', getreg('z'))
 endfunction
 
 nmap <C-x>G :call GitGrepWord()<CR>
-" }}}
+"" }}}
 
-" Switch between CommandT and CtrlP
+"" Switch between CommandT and CtrlP
 function! FuzzySearchChooser()
   if has('ruby')
     " Use CommandT if we have ruby
@@ -143,6 +142,6 @@ function! FuzzySearchChooser()
   endif
 endfunction
 
-" TODO: Please remap this key to something else.
+"" TODO: Please remap this key to something else.
 noremap <leader>gg :Ggrep -e '<C-R>=expand("<cword>")<Enter>'<Enter>
-" }}}
+"" }}}

@@ -6,8 +6,6 @@ endif
 call neobundle#rc(expand('~/.vim/bundle/'))
 NeoBundleFetch 'Shougo/neobundle.vim'
 
-" Recommended to install
-" After install, turn shell ~/.vim/bundle/vimproc, (n,g)make -f your_machines_makefile
 NeoBundle 'Shougo/vimproc', {
   \ 'build' : {
   \    'windows' : 'make -f make_mingw32.mak',
@@ -17,6 +15,5 @@ NeoBundle 'Shougo/vimproc', {
   \   },
   \ }
 
-" Note: You don't set NeoBundle setting in .gvimrc!
 filetype plugin indent on
 set enc=utf-8
