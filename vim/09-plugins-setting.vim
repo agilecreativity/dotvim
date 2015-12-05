@@ -1,3 +1,4 @@
+" file: ~/.vim/09-plugins-setting.vim {{{
 " Plugin: ag.vim  {{{
 " Use Ag instead of grep when available
 " if executable("ag")
@@ -212,4 +213,5 @@ let g:vim_json_syntax_conceal = 0
 
 " Plugin: airblade/vim-gitgutter {{{
 let g:gitgutter_max_signs = 5000
+" }}}
 " }}}

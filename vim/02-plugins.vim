@@ -1,7 +1,8 @@
-" file: ~/.vim/plugins.vim {{{
+" file: ~/.vim/02-plugins.vim {{{
 NeoBundle 'MarcWeber/vim-addon-mw-utils'
 NeoBundle 'Shougo/neocomplete.vim'
 NeoBundle 'Shougo/neosnippet.vim'
+NeoBundle 'Shougo/neosnippet-snippets'
 NeoBundle 'Shougo/vimfiler.vim'
 NeoBundle 'Shougo/vimshell.vim'
 NeoBundle 'SirVer/ultisnips'
@@ -17,6 +18,7 @@ NeoBundle 'ervandew/screen'
 NeoBundle 'ervandew/supertab'
 NeoBundle 'fatih/vim-go'
 NeoBundle 'flazz/vim-colorschemes'
+NeoBundle 'guns/vim-sexp'
 NeoBundle 'honza/vim-snippets'
 NeoBundle 'janko-m/vim-test'
 NeoBundle 'junegunn/seoul256.vim'
@@ -58,6 +60,8 @@ NeoBundle 'tpope/vim-rails'
 NeoBundle 'tpope/vim-rake'
 NeoBundle 'tpope/vim-rbenv'
 NeoBundle 'tpope/vim-repeat'
+NeoBundle 'tpope/vim-sexp-mappings-for-regular-people'
+NeoBundle 'tpope/vim-surround'
 NeoBundle 'tpope/vim-surround'
 NeoBundle 'tpope/vim-unimpaired'
 NeoBundle 'tsaleh/vim-tmux'
@@ -67,11 +71,6 @@ NeoBundle 'vim-scripts/listmaps.vim'
 NeoBundle 'wincent/Command-T'
 NeoBundle 'xolox/vim-colorscheme-switcher'
 NeoBundle 'xolox/vim-misc'
-
-"" Better plugins for editing Clojure files
-NeoBundle 'tpope/vim-sexp-mappings-for-regular-people'
-NeoBundle 'guns/vim-sexp'
-NeoBundle 'tpope/vim-surround'
 
 NeoBundleCheck
 " }}}

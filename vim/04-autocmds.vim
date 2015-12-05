@@ -1,4 +1,4 @@
-" file: ~/.vim/autocmds.vim {{{
+" file: ~/.vim/04-autocmds.vim {{{
 if has("autocmd")
   " Jade file {{{
   aug filetype_jade

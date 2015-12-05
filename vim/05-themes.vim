@@ -1,4 +1,4 @@
-" file: ~/.vim/themmes.vim {{{
+" file: ~/.vim/05-themmes.vim {{{
 set laststatus=2
 set statusline=
 set statusline+=%f\                    " file name
@@ -28,7 +28,7 @@ if has('gui_running')
     set guioptions-=t
     set guioptions-=g
     set guioptions-=m
-    " remove bottom, left, right scrollbar from Gvim
+    " Remove bottom, left, right scrollbar from Gvim
     set guioptions-=l
     set guioptions-=L
     set guioptions-=r
@@ -47,7 +47,7 @@ set noerrorbells
 set visualbell
 set t_vb="."
 
-" hint to keep lines short
+" Show hint to keep lines short at column 80
 if exists('+colorcolumn')
   set colorcolumn=80
 endif

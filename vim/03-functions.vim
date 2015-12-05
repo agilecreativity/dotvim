@@ -1,4 +1,4 @@
-" file: ~/.vim/functions.vim {{{
+" file: ~/.vim/03-functions.vim {{{
 " Rename current file {{{
 function! RenameFile()
   let old_name = expand('%')
@@ -17,9 +17,9 @@ endfunction
 function! InsertTabWrapper()
   let col = col('.') - 1
   if !col || getline('.')[col - 1] !~ '\k'
-     return "\<tab>"
+    return "\<tab>"
   else
-     return "\<c-p>"
+    return "\<c-p>"
   endif
 endfunction
 " }}}
@@ -100,7 +100,6 @@ endfunction
 
 " Wrapper function to `git grep` command {{{
 " Thanks to [Aaron Patterson's dotfile](https://github.com/tenderlove/dot_vim/blob/master/vimrc)
-"
 function! GitGrep(...)
   let save = &grepprg
   set grepprg=git\ grep\ -n\ $*

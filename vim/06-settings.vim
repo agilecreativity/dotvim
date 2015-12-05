@@ -1,4 +1,4 @@
-" file: ~/.vim/setting.vim {{{
+" file: ~/.vim/06-setting.vim {{{
 syntax on
 let mapleader=","
 let localmapleader="\\"
@@ -80,20 +80,5 @@ set wildignore+=*.ttf,*.woff,*.eot,*.ico,*icns,*.ri
 " }}}
 
 set foldmethod=manual
-
 call MapCR()
-let g:rails_menu = 2
-
-" Useful abbreviations
-ab q1  q!
-cnoreabbrev W! w!
-cnoreabbrev Q! q!
-cnoreabbrev Qall! qall!
-cnoreabbrev Wq wq
-cnoreabbrev Wa wa
-cnoreabbrev wQ wq
-cnoreabbrev WQ wq
-cnoreabbrev W w
-cnoreabbrev Q q
-cnoreabbrev Qall qall
 " }}}

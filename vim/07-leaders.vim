@@ -10,10 +10,11 @@ map <leader>gw  :!git add . && git commit -m 'WIP'<cr>
 "" }}}
 
 "" CommandT related settings {{{
-map <leader>f  :CommandTFlush<cr>\|:CommandT<cr>
-map <leader>F  :CommandTFlush<cr>\|:CommandT %%<cr>
-map <leader>gt :CommandTFlush<cr>\|:CommandTTag<cr>
+"map <leader>f  :CommandTFlush<cr>\|:CommandT<cr>
+"map <leader>F  :CommandTFlush<cr>\|:CommandT %%<cr>
+"map <leader>gt :CommandTFlush<cr>\|:CommandTTag<cr>
 
+"" Note: if CommandT is available and setup then use it
 nnoremap <silent> <leader>b :CommandTBuffer<cr>
 nnoremap <silent> <leader>t :CommandT<cr>
 
@@ -22,9 +23,9 @@ nnoremap <silent> <leader>t :CommandT<cr>
 "nnoremap <silent> <leader>t :CtrlP<cr>
 
 "" vim-spec related settings {{{
-map <leader>sd :call RunLastSpec()<cr>
-map <leader>sj :call RunNearestSpec()<cr>
-map <leader>ss :call RunCurrentSpecFile()<cr>
+"map <leader>sd :call RunLastSpec()<cr>
+"map <leader>sj :call RunNearestSpec()<cr>
+"map <leader>ss :call RunCurrentSpecFile()<cr>
 "" }}}
 
 "" NERDTree related setting {{{
