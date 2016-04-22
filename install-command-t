@@ -2,9 +2,14 @@
 ## Install the CommandT
 cd ~/.vim/bundle/Command-T/ruby/command-t
 
-## Note: use the ruby version that is the same as :ruby puts RUBY_VERSION
-## if not installed you may need to $rbenv install 2.0.0-p481
-rbenv local 2.0.0-p481
-rbenv rehash
+## TODO: automate this setup,to use the result from the result of
+## :ruby puts RUBY_VERSION
+## e.g.
+## We need to use the ruby version that is the same as :ruby puts RUBY_VERSION
+## if not installed you may need to $rbenv install <ruby-version>
+## e.g. On recent version of Arch Linux, the ruby version is 2.3.0p0 (April 2016)
+## Comment out for now and if required just run the next two command locally
+#rbenv local 2.3.0p0
+#rbenv rehash
 ruby extconf.rb
 make
