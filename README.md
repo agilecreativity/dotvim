@@ -62,7 +62,6 @@ rbenv rehash
 ruby extconf.rb
 make
 ```
-
 Now your CommandT should be ready to use.
 
 ### Notes
@@ -75,6 +74,8 @@ For example you may use Mac at home but use Linux at work and some plugins
 (e.g. `CommandT`) may need to be compiled/configured differently based on the
 platform used.
 
-### Tips
+### Tips/TODOs:
 
 - [Writing Clojure in Vim](https://robots.thoughtbot.com/writing-clojure-in-vim)
+- Rename this repository to `dotvim` instead of `dotvim-neo`
+- Make the `install-command-t` smarter about the ruby-version
