@@ -47,3 +47,6 @@ nnoremap <silent> <F3> :redir @a<CR>:g//<CR>:redir END<CR>:new<CR>:put! a<CR>
 nmap cp :let @+ = expand("%")<CR>
 
 colorscheme apprentice
+
+"" Suppress the startup message
+set shortmess+=I
