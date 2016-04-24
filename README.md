@@ -1,28 +1,19 @@
 ## Vim Configuration (dotvim)
 
 My dotvim using the `neocomplete.vim` instead of `YouCompleteMe` for
-code completion.
+code completion. Vim need to be installed with `lua` language support.
 
 ## Basic Installation
 
-```
-git clone https://github.com/agilecreativity/dotvim-neo.git ~/dotvim-neo
-cd ~/dotvim-neo
+```sh
+git clone https://github.com/agilecreativity/dotvim.git ~/dotvim
+cd ~/dotvim
 git submodule init
 git submodule update
 make install
 ```
 
 ## Post-installation procedure
-
-### Link to the private aliases
-
-If you really wan't to keep the private links to yourself then you could
-do the following
-
-``` shell
-ln s ~/Dropbox/config/aliases.vim ~/.vim/aliases.vim
-```
 
 ### Build CommandT
 
@@ -46,36 +37,39 @@ called with `:call RubyInfo()` from inside vim. This will get you something like
 
 or simple just type `:ruby puts RUBY_VERSION` from inside vim
 
-``` text
+e.g. On my Arch Linux system, I got the following:
+
+```
+Your Vim's ruby information:
+ruby version : 2.3.0
+ruby platform: x86_64-linux
+release date : 2015-12-25
+```
+
+On my Mac/OSX::
+
+```
 Your Vim's ruby information:
 ruby version : 2.0.0
-ruby platform: x86_64-darwin13.0.0
-release data : 2013-06-27
+ruby platform: universal.x86_64-darwin15
+release date : 2015-12-16
 ```
 
 Now you can build the CommandT as follow
 
-``` shell
+```sh
 cd ~/.vim/bundle/Command-T/ruby/command-t
-rbenv local system # or whatever the version we got back from `:ruby puts RUBY_VERSION` from inside Vim
-rbenv rehash
+# check the version of ruby
+ruby -v
+
+# Make sure that it is same as the result of `:ruby puts RUBY_VERSION` above
 ruby extconf.rb
 make
 ```
-Now your CommandT should be ready to use.
+Now your CommandT should be installed and ready to use.
 
 ### Notes
 
 All of the bundles installed with NeoBundle except the `neobundle.vim` in the
 bundle directory should be ignored. This make it more portable to work on
 different computer that may or may not have the same version of vim configuration.
-
-For example you may use Mac at home but use Linux at work and some plugins
-(e.g. `CommandT`) may need to be compiled/configured differently based on the
-platform used.
-
-### Tips/TODOs:
-
-- [Writing Clojure in Vim](https://robots.thoughtbot.com/writing-clojure-in-vim)
-- Rename this repository to `dotvim` instead of `dotvim-neo`
-- Make the `install-command-t` smarter about the ruby-version
