@@ -1,1 +1,1 @@
-/Users/bchoomnuan/.vim/bundle/ultisnips/ftdetect/UltiSnips.vim
+/home/sbaone/.vim/bundle/ultisnips/ftdetect/UltiSnips.vim
