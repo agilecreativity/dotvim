@@ -1,28 +1,26 @@
 "" file: ~/.vimrc.local
 set backupdir=~/.tmp
 
-"" Quickly run the code from inside Vim {{{
-"" Note: use the full path if you need use differrent version of ruby
-"noremap ;; <Esc>:w<CR>:!~/.rbenv/shims/ruby %<CR>
-"noremap ;; <Esc>:w<CR>:!/opt/boxen/nodenv/shims/node %<CR>
-
-noremap  <leader>, <Esc>:w<CR>:!/opt/boxen/rbenv/shims/ruby %<CR>
-noremap <leader>ct :!/opt/boxen/homebrew/bin/ctags -R --exclude=\*.js --exclude=vendor/\* .<CR>
-
-"noremap <leader>, <Esc>:w<CR>:!$GOROOT/bin/go run %<CR>
-"noremap <leader>,  <Esc>:w<CR>:!cljsc %<CR>
-"noremap ;;         <Esc>:w<CR>:r !$GOROOT/bin/go run %<CR>
-noremap <leader>c  <Esc>:w<CR>:!cljsc %<CR>
-noremap <leader>r  <Esc>:w<CR>:r !cljsc %<CR>
-"" }}}
+let os = substitute(system('uname'),"\n","","")
+if os == "Darwin"
+  noremap <leader>ct :!/opt/boxen/homebrew/bin/ctags -R --exclude=\*.js --exclude=vendor/\* .<CR>
+  noremap <leader>, <Esc>:w<CR>:!/opt/boxen/rbenv/shims/ruby %<CR>
+elseif os == "Linux"
+  noremap <leader>ct :!/usr/bin/ctags -R --exclude=\*.js --exclude=vendor/\* .<CR>
+  noremap <leader>, <Esc>:w<CR>:!$HOME/.rbenv/shims/ruby %<CR>
+  "" If you are working on Clojure
+  "noremap <leader>c <Esc>:w<CR>:!cljsc %<CR>
+  "noremap <leader>r <Esc>:w<CR>:r !cljsc %<CR>
+endif
 
 "" From: https://github.com/zenazn/dotfiles/blob/master/vimrc {{{
-" Trailing whitespace
-" highlight ExtraWhitespace ctermbg=red guibg=red
-" au ColorScheme * highlight ExtraWhitespace guibg=red
-" au BufEnter    * match ExtraWhitespace /\s\+$/
-" au InsertEnter * match ExtraWhitespace /\s\+\%#\@<!$/
-" au InsertLeave * match ExtraWhiteSpace /\s\+$/
+"" Trailing whitespace
+highlight ExtraWhitespace ctermbg=red guibg=red
+au ColorScheme * highlight ExtraWhitespace guibg=red
+au BufEnter    * match ExtraWhitespace /\s\+$/
+"" Remove them if you are in the good team at work!
+"au InsertEnter * match ExtraWhitespace /\s\+\%#\@<!$/
+"au InsertLeave * match ExtraWhiteSpace /\s\+$/
 "" }}}
 
 "" Add some runtimepath to make 'gf' work better with current project
@@ -31,10 +29,8 @@ set runtimepath+=../widget
 set runtimepath+=app
 set runtimepath+=app/widget
 set runtimepath+=node_modules
-
 set suffixesadd+=.coffee
 set suffixesadd+=.json
-
 set number
 set nowrap
 
@@ -50,3 +46,4 @@ colorscheme apprentice
 
 "" Suppress the startup message
 set shortmess+=I
+set wrapscan
