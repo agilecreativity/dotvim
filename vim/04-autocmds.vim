@@ -39,6 +39,12 @@ if has("autocmd")
     au FileType el setl ts=2 sw=2 sts=2 et
   aug END
 
+  aug filetype_java
+    au!
+    au BufRead,BufNewFile *.java set filetype=java
+    au FileType el setl ts=4 sw=4 sts=4 et
+  aug END
+
   aug filetype_vim
     au!
     au FileType vim setlocal foldmethod=marker
