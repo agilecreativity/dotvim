@@ -101,6 +101,7 @@ if has("autocmd")
     au!
     au FileType ruby,haml,eruby,yaml,html,javascript,sass,cucumber,slim set ai sw=2 sts=2 et
     au FileType python set sw=4 sts=4 et
+    au FileType java set sw=4 sts=4 et
 
     au! BufRead,BufNewFile *.sass setfiletype sass
     au! BufRead,BufNewFile *.slim setfiletype slim
