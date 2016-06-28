@@ -42,7 +42,7 @@ if has("autocmd")
   aug filetype_java
     au!
     au BufRead,BufNewFile *.java set filetype=java
-    au FileType el setl ts=4 sw=4 sts=4 et
+    au FileType java setl ts=4 sw=4 sts=4 et
   aug END
 
   aug filetype_vim
