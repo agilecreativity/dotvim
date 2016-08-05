@@ -45,6 +45,21 @@ if has("autocmd")
     au FileType java setl ts=4 sw=4 sts=4 et
   aug END
 
+  aug filetype_groovy
+    au!
+    au BufRead,BufNewFile *.groovy    set filetype=groovy
+    au BufRead,BufNewFile *.gradle    set filetype=groovy
+    au BufRead,BufNewFile Jenkinsfile set filetype=groovy
+    au FileType groovy setl ts=2 sw=2 sts=2 et
+  aug END
+
+  aug filetype_clojure
+    au!
+    au BufRead,BufNewFile *.clj  set filetype=clojure
+    au BufRead,BufNewFile *.boot set filetype=clojure
+    au FileType clojure setl ts=4 sw=4 sts=4 et
+  aug END
+
   aug filetype_vim
     au!
     au FileType vim setlocal foldmethod=marker

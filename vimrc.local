@@ -42,7 +42,14 @@ nnoremap <silent> <F3> :redir @a<CR>:g//<CR>:redir END<CR>:new<CR>:put! a<CR>
 "" See: http://stackoverflow.com/questions/916875/yank-file-name-path-of-current-buffer-in-vim
 nmap cp :let @+ = expand("%")<CR>
 
-colorscheme apprentice
+"colorscheme apprentice
+colorscheme seoul256
+"colorscheme seoul256-light
+"colorscheme tibet
+
+"" For screenshot?
+"colorscheme Tomorrow
+"colorscheme xoria256
 
 "" Suppress the startup message
 set shortmess+=I
