@@ -54,3 +54,15 @@ colorscheme seoul256
 "" Suppress the startup message
 set shortmess+=I
 set wrapscan
+
+"" Make whitespace visible so we can see if tabs, are being used
+"" See: http://vimcasts.org/episodes/show-invisibles/
+"" entered by :ctrl-vu followed by the 4 digit hexadecimal code
+set list
+"set listchars=eol:¬,tab:>-,trail:~,extends:>,precedes:<
+set listchars=eol:¬,tab:>-,trail:~,extends:>,precedes:<
+
+"" Copy from clipboard quicker
+nnoremap <F2> :set invpaste paste?<CR>
+set pastetoggle=<F2>
+set showmode
