@@ -7,17 +7,18 @@ map <leader>gs  :Gstatus<cr>
 map <leader>gw  :!git add . && git commit -m 'WIP'<cr>
 
 "" CommandT related settings
-map <leader>f :CommandTFlush<cr>\|:CommandT<cr>
-map <leader>F :CommandTFlush<cr>\|:CommandT %%<cr>
-nnoremap <silent> <leader>b :CommandTBuffer<cr>
-nnoremap <silent> <leader>t :CommandT<cr>
+" map <leader>f :CommandTFlush<cr>\|:CommandT<cr>
+" map <leader>F :CommandTFlush<cr>\|:CommandT %%<cr>
+" nnoremap <silent> <leader>b :CommandTBuffer<cr>
+" nnoremap <silent> <leader>t :CommandT<cr>
 
 "" If CommandT is not working use ContrlP
-"nnoremap <silent> <leader>b :CtrlPBuffer<cr>
-"nnoremap <silent> <leader>t :CtrlP<cr>
+nnoremap <silent> <leader>b :CtrlPBuffer<cr>
+nnoremap <silent> <leader>t :CtrlP<cr>
 
 nnoremap <leader>nf :NERDTreeFind<cr>
 nnoremap <leader>n  :NERDTreeToggle<cr>
+
 nnoremap <leader>a  :Ag!<space>
 nnoremap <leader>l  :ls<cr>:b
 nnoremap <leader>nr :setlocal number!<cr>
