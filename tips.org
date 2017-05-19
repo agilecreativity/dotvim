@@ -1,0 +1,28 @@
+** Tips
+
+***** Install Vim with lua and other languages support
+
+ #+BEGIN_SRC sh
+ brew install macvim --with-lua --with-luajit --with-override-system-vim --with-python3
+ #+END_SRC
+
+***** TODO Find out ways to pass the option to =ansible= provision?
+
+#+BEGIN_EXAMPLE
+brew info macvim
+## possible options
+--with-custom-python
+	Build with a custom Python 2 instead of the Homebrew version.
+--with-lua
+	Build with lua support
+--with-luajit
+	Build with luajit support
+--with-override-system-vim
+	Override system vim
+--with-python3
+	Build with python3 support
+--without-cscope
+	Build without cscope support
+--without-python
+	Build without python support
+#+END_EXAMPLE
