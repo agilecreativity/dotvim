@@ -69,6 +69,7 @@ NeoBundle 'vim-scripts/listmaps.vim'
 NeoBundle 'wincent/Command-T'
 NeoBundle 'xolox/vim-colorscheme-switcher'
 NeoBundle 'xolox/vim-misc'
+NeoBundle 'leafgarland/typescript-vim'
 
 NeoBundleCheck
 "" }}}

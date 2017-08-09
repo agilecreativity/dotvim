@@ -1,5 +1,10 @@
 " file: ~/.vim/04-autocmds.vim {{{
 if has("autocmd")
+  aug filetype_typescript
+    au!
+    au BufRead,BufNewFile *.ts set filetype=typescript
+  aug END
+
   aug filetype_jade
     au!
     au BufRead,BufNewFile *.jade set filetype=jade
