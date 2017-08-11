@@ -70,6 +70,7 @@ NeoBundle 'wincent/Command-T'
 NeoBundle 'xolox/vim-colorscheme-switcher'
 NeoBundle 'xolox/vim-misc'
 NeoBundle 'leafgarland/typescript-vim'
+NeoBundle 'udalov/kotlin-vim'
 
 NeoBundleCheck
 "" }}}

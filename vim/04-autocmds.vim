@@ -1,5 +1,10 @@
 " file: ~/.vim/04-autocmds.vim {{{
 if has("autocmd")
+  aug filetype_kotlin
+    au!
+    au BufRead,BufNewFile *.kt set filetype=kotlin
+  aug END
+
   aug filetype_typescript
     au!
     au BufRead,BufNewFile *.ts set filetype=typescript
