@@ -7,7 +7,7 @@ if has("autocmd")
 
   aug filetype_typescript
     au!
-    au BufRead,BufNewFile *.ts set filetype=typescript
+    au BufRead,BufNewFile *.ts,*.tsx set filetype=typescript
   aug END
 
   aug filetype_jade
