@@ -1,5 +1,10 @@
 " file: ~/.vim/04-autocmds.vim {{{
 if has("autocmd")
+  aug filetype_graphql
+    au!
+    au BufRead,BufNewFile *.graphql set filetype=graphql
+  aug END
+
   aug filetype_kotlin
     au!
     au BufRead,BufNewFile *.kt set filetype=kotlin
