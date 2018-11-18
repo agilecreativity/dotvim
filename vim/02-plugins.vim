@@ -1,4 +1,5 @@
 "" file: ~/.vim/02-plugins.vim {{{
+NeoBundle 'GEverding/vim-hocon'
 NeoBundle 'MarcWeber/vim-addon-mw-utils'
 NeoBundle 'Shougo/neocomplete.vim'
 NeoBundle 'Shougo/neosnippet.vim'
@@ -10,6 +11,7 @@ NeoBundle 'bling/vim-airline'
 NeoBundle 'bronson/vim-trailing-whitespace'
 NeoBundle 'carlosgaldino/elixir-snippets'
 NeoBundle 'christoomey/vim-tmux-navigator'
+NeoBundle 'cocopon/iceberg.vim'
 NeoBundle 'digitaltoad/vim-jade'
 NeoBundle 'edkolev/tmuxline.vim'
 NeoBundle 'elzr/vim-json'

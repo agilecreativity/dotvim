@@ -19,7 +19,10 @@ endif
 set background=dark
 set lines=80
 set columns=120
-colorscheme seoul256
+
+"" Fav colorscheme
+"colorscheme seoul256
+colorscheme iceberg
 
 if has('gui_running')
   if has("gui_gtk2")
