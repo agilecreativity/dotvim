@@ -43,7 +43,8 @@ nnoremap <silent> <F3> :redir @a<CR>:g//<CR>:redir END<CR>:new<CR>:put! a<CR>
 nmap cp :let @+ = expand("%")<CR>
 
 "colorscheme apprentice
-colorscheme seoul256
+colorscheme iceberg
+"colorscheme seoul256
 "colorscheme seoul256-light
 "colorscheme tibet
 
