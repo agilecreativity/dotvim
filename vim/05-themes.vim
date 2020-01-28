@@ -39,7 +39,8 @@ if has('gui_running')
   elseif has("gui_macvim")
     set autowriteall
     set tabpagemax=20
-    set guifont=Menlo\ Regular:h13
+    ""set guifont=Menlo\ Regular:h20
+    set guifont=Fira\ Code:h20
   endif
 endif
 
