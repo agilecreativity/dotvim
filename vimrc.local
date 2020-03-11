@@ -44,9 +44,10 @@ nmap cp :let @+ = expand("%")<CR>
 
 "colorscheme apprentice
 "colorscheme seoul256
-colorscheme iceberg
+"colorscheme iceberg
 "colorscheme seoul256-light
 "colorscheme tibet
+colorscheme darkblue
 
 "" For screenshot?
 "colorscheme Tomorrow
