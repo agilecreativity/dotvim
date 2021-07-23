@@ -1,6 +1,7 @@
 "" file: ~/.vim/02-plugins.vim {{{
 NeoBundle 'GEverding/vim-hocon'
 NeoBundle 'MarcWeber/vim-addon-mw-utils'
+"" NeoBundle 'Olical/conjure'   "" NOTE: required NeoVim
 NeoBundle 'Shougo/neocomplete.vim'
 NeoBundle 'Shougo/neosnippet.vim'
 NeoBundle 'Shougo/neosnippet-snippets'
