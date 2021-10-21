@@ -21,8 +21,9 @@ set lines=80
 set columns=120
 
 "" Fav colorscheme
-"colorscheme seoul256
+"colorscheme doom-one
 colorscheme iceberg
+"colorscheme seoul256
 
 if has('gui_running')
   if has("gui_gtk2")
