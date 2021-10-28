@@ -1,9 +1,9 @@
 "" file: ~/.vim/07-leaders.vim {{{
 "" Git related settings
-map <leader>gac :Gcommit -a -m ""<left>
-map <leader>gb  :Gblame<cr>
-map <leader>gc  :Gcommit -m "wip: "<left>
-map <leader>gs  :Gstatus<cr>
+map <leader>gac :Git commit -a -m ""<left>
+map <leader>gb  :Git blame<cr>
+map <leader>gc  :Git commit -m "wip: "<left>
+map <leader>gs  :Git status<cr>
 map <leader>gw  :!git add . && git commit -m 'WIP'<cr>
 
 "" CommandT related settings
