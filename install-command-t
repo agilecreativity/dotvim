@@ -9,7 +9,7 @@ cd ~/.vim/bundle/Command-T/ruby/command-t
 ## if not installed you may need to $rbenv install <ruby-version>
 ## e.g. On recent version of Arch Linux, the ruby version is 2.3.0p0 (April 2016)
 ## Comment out for now and if required just run the next two command locally
-rbenv local 2.3.1
+rbenv local 3.0.2
 rbenv rehash
 ruby extconf.rb
 make
